@@ -2,4 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 yarn commitlint --edit $1
-yarn pretty-quick --staged --ignore-path .gitignore && yarn lint-staged
+yarn pretty-quick --staged --ignore-path .prettierignore && yarn lint-staged
