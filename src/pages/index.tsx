@@ -1,8 +1,11 @@
+import { Box, Button, Typography } from '@mui/material';
+
 export default () => {
    return (
-      <div>
-         <h1>Homepage</h1>
-         <p>Some content...</p>
-      </div>
+      <Box>
+         <Typography variant="h6">Homepage</Typography>
+         <Typography>Some content...</Typography>
+         <Button variant="contained">Sample button</Button>
+      </Box>
    );
 };
