@@ -1,24 +1,35 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "My personal portfolio project.",
-  "repository": "git@github.com:matthieu-locussol/portfolio.git",
-  "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "dev": "yarn run next dev",
-    "build": "yarn run next build",
-    "start": "yarn run next start",
-    "export": "yarn run next export"
-  },
-  "dependencies": {
-    "next": "^12.0.7",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
-    "typescript": "^4.5.4"
-  }
+   "name": "portfolio",
+   "version": "1.0.0",
+   "description": "My personal portfolio project.",
+   "repository": "git@github.com:matthieu-locussol/portfolio.git",
+   "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com>",
+   "license": "MIT",
+   "scripts": {
+      "dev": "yarn run next dev",
+      "build": "yarn run next build",
+      "start": "yarn run next start",
+      "export": "yarn run next export",
+      "check:prettier": "prettier --list-different --config ./.prettierrc.json --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,json}\"",
+      "check:eslint": "eslint --ignore-path .gitignore src/**/*",
+      "check:typescript": "tsc --project ./tsconfig.json --noEmit"
+   },
+   "dependencies": {
+      "next": "^12.0.7",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+   },
+   "devDependencies": {
+      "@types/react": "^17.0.38",
+      "@types/react-dom": "^17.0.11",
+      "@typescript-eslint/eslint-plugin": "^5.8.0",
+      "@typescript-eslint/parser": "^5.8.0",
+      "eslint": "^8.5.0",
+      "eslint-config-airbnb": "^19.0.4",
+      "eslint-config-airbnb-typescript": "^16.1.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-import": "^2.25.3",
+      "prettier": "^2.5.1",
+      "typescript": "^4.5.4"
+   }
 }
