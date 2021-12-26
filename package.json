@@ -10,6 +10,7 @@
       "build": "yarn run next build",
       "start": "yarn run next start",
       "export": "yarn run next export",
+      "gitignore": "curl -sL https://www.toptal.com/developers/gitignore/api/nextjs,node,react,reactnative,yarn,visualstudiocode > .gitignore",
       "check:prettier": "prettier --list-different --config ./.prettierrc.json --ignore-path .prettierignore --write \"**/*.{js,jsx,ts,tsx,json}\"",
       "check:eslint": "eslint --ignore-path .gitignore src/**/*",
       "check:typescript": "tsc --project ./tsconfig.json --noEmit",
