@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/matthieu-locussol/portfolio/compare/v1.0.1...v1.1.0) (2021-12-26)
+
+
+### Features
+
+* added jest & unit tests ([534081a](https://github.com/matthieu-locussol/portfolio/commit/534081af1a0b2dee885ba77bfb7cb39c689742ac))
+
 ### [1.0.1](https://github.com/matthieu-locussol/portfolio/compare/v1.0.0...v1.0.1) (2021-12-25)
 
 
