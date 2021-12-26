@@ -2,7 +2,7 @@
    "compilerOptions": {
       "target": "es5",
       "lib": ["dom", "dom.iterable", "esnext"],
-      "allowJs": true,
+      "allowJs": false,
       "skipLibCheck": true,
       "strict": false,
       "forceConsistentCasingInFileNames": true,
@@ -15,6 +15,6 @@
       "isolatedModules": true,
       "jsx": "preserve"
    },
-   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+   "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", "next.config.js"],
    "exclude": ["node_modules"]
 }

@@ -12,6 +12,7 @@
    "parserOptions": {
       "project": ["./tsconfig.json"]
    },
+   "ignorePatterns": "next.config.js",
    "rules": {
       "arrow-body-style": "off",
       "no-underscore-dangle": "off",
@@ -48,5 +49,8 @@
             "argsIgnorePattern": "^_"
          }
       ]
+   },
+   "env": {
+      "jest": true
    }
 }
