@@ -1,11 +1,14 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Card, Typography } from '@mui/material';
+import { Layout } from '../components/Layout';
 
 export default () => {
    return (
-      <Box>
-         <Typography variant="h6">Homepage</Typography>
-         <Typography>Some content...</Typography>
-         <Button variant="contained">Sample button</Button>
-      </Box>
+      <Layout>
+         <Typography variant="h5">Some title...</Typography>
+         <Typography variant="body1" color="secondary">
+            Some content...
+         </Typography>
+         <Card sx={{ p: 2, mt: 4 }}>Here is come card content!</Card>
+      </Layout>
    );
 };
