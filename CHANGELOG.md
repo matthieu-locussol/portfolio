@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/matthieu-locussol/portfolio/compare/v1.1.0...v1.2.0) (2021-12-30)
+
+
+### Features
+
+* added a ColorMode picker with a light theme and dark theme + favicons ([432401c](https://github.com/matthieu-locussol/portfolio/commit/432401c8191755209ca51d07c61fc6f1fd64b770))
+
 ## [1.1.0](https://github.com/matthieu-locussol/portfolio/compare/v1.0.1...v1.1.0) (2021-12-26)
 
 
