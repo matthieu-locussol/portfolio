@@ -24,8 +24,7 @@ export default (props: AppProps) => {
                href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700;800&display=swap"
                rel="stylesheet"
             />
-            <link rel="icon" href="/favicons/favicon.ico" />
-            <link rel="shortcut icon" href="/favicons/favicon.ico" />
+            <link rel="shortcut icon" href="/favicon.ico" />
             <meta
                name="description"
                content="Matthieu Locussol is a web developer and software engineer who enjoys architecting & building wonderful applications."
