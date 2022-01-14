@@ -1,29 +1,29 @@
 import { createTheme, Theme } from '@mui/material';
 import {
-   BACKGROUND_DEFAULT,
-   BACKGROUND_PAPER,
-   PRIMARY_MAIN,
-   SECONDARY_MAIN,
-   TEXT_PRIMARY,
-   TEXT_SECONDARY,
+   DARK_BACKGROUND_DEFAULT,
+   DARK_BACKGROUND_PAPER,
+   DARK_PRIMARY_MAIN,
+   DARK_SECONDARY_MAIN,
+   DARK_TEXT_PRIMARY,
+   DARK_TEXT_SECONDARY,
 } from './constants';
 
 export const darkTheme: Theme = createTheme({
    palette: {
       mode: 'dark',
       primary: {
-         main: PRIMARY_MAIN,
+         main: DARK_PRIMARY_MAIN,
       },
       secondary: {
-         main: SECONDARY_MAIN,
+         main: DARK_SECONDARY_MAIN,
       },
       background: {
-         default: BACKGROUND_DEFAULT,
-         paper: BACKGROUND_PAPER,
+         default: DARK_BACKGROUND_DEFAULT,
+         paper: DARK_BACKGROUND_PAPER,
       },
       text: {
-         primary: TEXT_PRIMARY,
-         secondary: TEXT_SECONDARY,
+         primary: DARK_TEXT_PRIMARY,
+         secondary: DARK_TEXT_SECONDARY,
       },
    },
    typography: {
@@ -36,8 +36,13 @@ export const darkTheme: Theme = createTheme({
                fontSize: 18,
                textTransform: 'none',
                ':hover': {
-                  color: PRIMARY_MAIN,
+                  color: DARK_PRIMARY_MAIN,
                },
+            },
+            outlined: {
+               fontFamily: 'Fira Code',
+               fontWeight: 400,
+               fontSize: 14,
             },
          },
       },

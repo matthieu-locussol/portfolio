@@ -1,22 +1,30 @@
 import { Theme } from '@emotion/react';
 import { createTheme } from '@mui/material';
+import {
+   LIGHT_BACKGROUND_DEFAULT,
+   LIGHT_BACKGROUND_PAPER,
+   LIGHT_PRIMARY_MAIN,
+   LIGHT_SECONDARY_MAIN,
+   LIGHT_TEXT_PRIMARY,
+   LIGHT_TEXT_SECONDARY,
+} from './constants';
 
 export const lightTheme: Theme = createTheme({
    palette: {
       mode: 'light',
       primary: {
-         main: '#24BF9A',
+         main: LIGHT_PRIMARY_MAIN,
       },
       secondary: {
-         main: '#0B192F',
+         main: LIGHT_SECONDARY_MAIN,
       },
       background: {
-         default: '#F3F7F9',
-         paper: '#FFFFFF',
+         default: LIGHT_BACKGROUND_DEFAULT,
+         paper: LIGHT_BACKGROUND_PAPER,
       },
       text: {
-         primary: '#212529',
-         secondary: '#6B7280',
+         primary: LIGHT_TEXT_PRIMARY,
+         secondary: LIGHT_TEXT_SECONDARY,
       },
    },
    typography: {
@@ -29,8 +37,13 @@ export const lightTheme: Theme = createTheme({
                fontSize: 18,
                textTransform: 'none',
                ':hover': {
-                  color: '#24BF9A',
+                  color: LIGHT_PRIMARY_MAIN,
                },
+            },
+            outlined: {
+               fontFamily: 'Fira Code',
+               fontWeight: 400,
+               fontSize: 14,
             },
          },
       },

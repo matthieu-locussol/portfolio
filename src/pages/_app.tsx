@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import { ColorModeProvider } from '../contexts/ColorModeContext';
-import { BACKGROUND_DEFAULT } from '../theme/constants';
+import { DARK_BACKGROUND_DEFAULT } from '../theme/constants';
 
 export default (props: AppProps) => {
    const { Component, pageProps } = props;
@@ -22,6 +22,10 @@ export default (props: AppProps) => {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             <link
                href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700;800&display=swap"
+               rel="stylesheet"
+            />
+            <link
+               href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
                rel="stylesheet"
             />
             <link rel="shortcut icon" href="/favicon.ico" />
@@ -84,9 +88,9 @@ export default (props: AppProps) => {
             <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
-            <meta name="msapplication-TileColor" content={BACKGROUND_DEFAULT} />
+            <meta name="msapplication-TileColor" content={DARK_BACKGROUND_DEFAULT} />
             <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png" />
-            <meta name="theme-color" content={BACKGROUND_DEFAULT} />
+            <meta name="theme-color" content={DARK_BACKGROUND_DEFAULT} />
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJFJF8WHYB"></script>
             <script
                dangerouslySetInnerHTML={{

@@ -1,6 +1,13 @@
-export const PRIMARY_MAIN = '#64FFDA';
-export const SECONDARY_MAIN = '#CCD6F6';
-export const BACKGROUND_DEFAULT = '#0A192F';
-export const BACKGROUND_PAPER = '#172A45';
-export const TEXT_PRIMARY = '#E6F1FF';
-export const TEXT_SECONDARY = '#8892B0';
+export const DARK_PRIMARY_MAIN = '#64FFDA';
+export const DARK_SECONDARY_MAIN = '#CCD6F6';
+export const DARK_BACKGROUND_DEFAULT = '#0A192F';
+export const DARK_BACKGROUND_PAPER = '#172A45';
+export const DARK_TEXT_PRIMARY = '#E6F1FF';
+export const DARK_TEXT_SECONDARY = '#8892B0';
+
+export const LIGHT_PRIMARY_MAIN = '#24BF9A';
+export const LIGHT_SECONDARY_MAIN = '#0B192F';
+export const LIGHT_BACKGROUND_DEFAULT = '#F3F7F9';
+export const LIGHT_BACKGROUND_PAPER = '#FFFFFF';
+export const LIGHT_TEXT_PRIMARY = '#212529';
+export const LIGHT_TEXT_SECONDARY = '#6B7280';
