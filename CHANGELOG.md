@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/matthieu-locussol/portfolio/compare/v1.2.1...v1.2.2) (2022-01-14)
+
+
+### Features
+
+* added a ResumeButton component ([7d1d346](https://github.com/matthieu-locussol/portfolio/commit/7d1d346dbf77678c120d552a9875c05dc86a18d1))
+* added light & dark themes ([a002f87](https://github.com/matthieu-locussol/portfolio/commit/a002f87c1b686a764844b1d6e64b776d50c0eb07))
+* uses ResumeButton in Header ([88e6ed6](https://github.com/matthieu-locussol/portfolio/commit/88e6ed65e529ceefeef722fb7387fc4aa00e2c79))
+
 ### [1.2.1](https://github.com/matthieu-locussol/portfolio/compare/v1.2.0...v1.2.1) (2022-01-04)
 
 
