@@ -1,16 +1,23 @@
 import { useTheme } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
 import * as React from 'react';
 import { useColorMode } from '../contexts/ColorModeContext';
-import { ColorModeButton } from './ColorModeButton';
-import { Logo } from './Logo';
-import { ResumeButton } from './ResumeButton';
+import { HeaderDesktop } from './HeaderDesktop';
+import { HeaderMobile } from './HeaderMobile';
 
-const pages = ['About', 'Work', 'Portfolio', 'Articles', 'Contact'];
+export interface MenuItem {
+   name: string;
+   href: string;
+}
+
+const items: MenuItem[] = [
+   { name: 'About', href: '/about' },
+   { name: 'Work', href: '/work' },
+   { name: 'Portfolio', href: '/portfolio' },
+   { name: 'Articles', href: '/articles' },
+   { name: 'Contact', href: '/contact' },
+];
 
 export const Header = () => {
    const theme = useTheme();
@@ -31,24 +38,8 @@ export const Header = () => {
                   : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
          }}>
          <Container maxWidth="xl">
-            <Toolbar disableGutters>
-               <Box
-                  sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', pr: 2, pl: 2 }}>
-                  <Logo size={42} />
-               </Box>
-               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                  {pages.map((page) => (
-                     <Button size="medium" color="secondary" key={page} sx={{ ml: 2 }}>
-                        {page}
-                     </Button>
-                  ))}
-               </Box>
-               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                  <ColorModeButton />
-                  <ResumeButton lang="EN" />
-                  <ResumeButton lang="FR" />
-               </Box>
-            </Toolbar>
+            <HeaderDesktop items={items} sx={{ display: { xs: 'none', md: 'flex' } }} />
+            <HeaderMobile items={items} sx={{ display: { xs: 'flex', md: 'none' } }} />
          </Container>
       </AppBar>
    );
