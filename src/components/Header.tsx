@@ -8,6 +8,7 @@ import * as React from 'react';
 import { useColorMode } from '../contexts/ColorModeContext';
 import { ColorModeButton } from './ColorModeButton';
 import { Logo } from './Logo';
+import { ResumeButton } from './ResumeButton';
 
 const pages = ['About', 'Work', 'Portfolio', 'Articles', 'Contact'];
 
@@ -44,12 +45,8 @@ export const Header = () => {
                </Box>
                <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                   <ColorModeButton />
-                  <Button size="small" variant="outlined" sx={{ ml: 2 }}>
-                     Resume (EN)
-                  </Button>
-                  <Button size="small" variant="outlined" sx={{ ml: 2 }}>
-                     Resume (FR)
-                  </Button>
+                  <ResumeButton lang="EN" />
+                  <ResumeButton lang="FR" />
                </Box>
             </Toolbar>
          </Container>
