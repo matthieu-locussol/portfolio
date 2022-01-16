@@ -11,7 +11,7 @@ interface HeaderDesktopProps extends ToolbarProps {
 export const HeaderDesktop = ({ items, ...rest }: HeaderDesktopProps) => {
    return (
       <Toolbar disableGutters {...rest}>
-         <Box sx={{ alignItems: 'center', pr: 2, pl: 2 }}>
+         <Box sx={{ alignItems: 'center', pr: 1, pl: 1 }}>
             <Logo size={42} />
          </Box>
          <Box sx={{ flexGrow: 1 }}>

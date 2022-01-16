@@ -6,6 +6,7 @@ import {
    DARK_SECONDARY_MAIN,
    DARK_TEXT_PRIMARY,
    DARK_TEXT_SECONDARY,
+   LIGHT_BACKGROUND_DEFAULT,
 } from './constants';
 
 export const darkTheme: Theme = createTheme({
@@ -27,13 +28,15 @@ export const darkTheme: Theme = createTheme({
       },
    },
    typography: {
-      fontFamily: "'Jost', sans-serif",
+      fontFamily:
+         'Poppins, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif',
    },
    components: {
       MuiButton: {
          styleOverrides: {
             root: {
                fontSize: 18,
+               fontFamily: 'Jost',
                textTransform: 'none',
                ':hover': {
                   color: DARK_PRIMARY_MAIN,
@@ -43,6 +46,14 @@ export const darkTheme: Theme = createTheme({
                fontFamily: 'Fira Code',
                fontWeight: 400,
                fontSize: 14,
+            },
+         },
+      },
+      MuiTypography: {
+         styleOverrides: {
+            h2: {
+               fontWeight: 600,
+               color: LIGHT_BACKGROUND_DEFAULT,
             },
          },
       },

@@ -36,7 +36,7 @@ export const Header = () => {
                   ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
                   : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
          }}>
-         <Box sx={{ pl: 3, pr: 3 }}>
+         <Box sx={{ pl: { xs: 2, sm: 3 }, pr: { xs: 2, sm: 3 } }}>
             <HeaderDesktop items={items} sx={{ display: { xs: 'none', md: 'flex' } }} />
             <HeaderMobile items={items} sx={{ display: { xs: 'flex', md: 'none' } }} />
          </Box>

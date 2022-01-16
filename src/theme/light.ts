@@ -1,6 +1,7 @@
 import { Theme } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import {
+   DARK_BACKGROUND_DEFAULT,
    LIGHT_BACKGROUND_DEFAULT,
    LIGHT_BACKGROUND_PAPER,
    LIGHT_PRIMARY_MAIN,
@@ -28,13 +29,15 @@ export const lightTheme: Theme = createTheme({
       },
    },
    typography: {
-      fontFamily: "'Jost', sans-serif",
+      fontFamily:
+         'Poppins, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif',
    },
    components: {
       MuiButton: {
          styleOverrides: {
             root: {
                fontSize: 18,
+               fontFamily: 'Jost',
                textTransform: 'none',
                ':hover': {
                   color: LIGHT_PRIMARY_MAIN,
@@ -44,6 +47,14 @@ export const lightTheme: Theme = createTheme({
                fontFamily: 'Fira Code',
                fontWeight: 400,
                fontSize: 14,
+            },
+         },
+      },
+      MuiTypography: {
+         styleOverrides: {
+            h2: {
+               fontWeight: 600,
+               color: DARK_BACKGROUND_DEFAULT,
             },
          },
       },

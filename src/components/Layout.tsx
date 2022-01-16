@@ -1,8 +1,7 @@
-import { Box } from '@mui/material';
-import { PropsWithChildren } from 'react';
+import { Box, BoxProps } from '@mui/material';
 import { Header } from './Header';
 
-export const Layout = ({ children }: PropsWithChildren<{}>) => {
+export const Layout = ({ children }: BoxProps) => {
    return (
       <Box>
          <Header />
