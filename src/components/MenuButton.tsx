@@ -81,7 +81,7 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
                   height: '100%',
                }}>
                {items.map((item) => (
-                  <>
+                  <React.Fragment key={item.name}>
                      <Link href={item.href} passHref key={item.name}>
                         <ListItem button sx={{ p: 2 }}>
                            <ListItemText
@@ -90,7 +90,7 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
                         </ListItem>
                      </Link>
                      <Divider />
-                  </>
+                  </React.Fragment>
                ))}
                <ResumeMobileButton lang="FR" />
                <Divider />
