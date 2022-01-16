@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/matthieu-locussol/portfolio/compare/v1.2.3...v1.3.0) (2022-01-16)
+
+
+### Features
+
+* added a postinstall script for husky ([ad8b234](https://github.com/matthieu-locussol/portfolio/commit/ad8b2347961ca5c115b8f8e3385bb847ad02cb51))
+* added homepage content ([b024ced](https://github.com/matthieu-locussol/portfolio/commit/b024cedd78fe5c44de10f31c7fb23fa261142284))
+
+
+### Bug Fixes
+
+* fluid layout on wide desktop ([55c9865](https://github.com/matthieu-locussol/portfolio/commit/55c9865e0eb00b3102f894e03321f6fb71768db1))
+* set key to mapped items ([a6ae3b1](https://github.com/matthieu-locussol/portfolio/commit/a6ae3b1b545368faf5f0c19c4cde209bf099d7bc))
+
 ### [1.2.3](https://github.com/matthieu-locussol/portfolio/compare/v1.2.2...v1.2.3) (2022-01-14)
 
 
