@@ -1,6 +1,5 @@
-import { useTheme } from '@mui/material';
+import { Box, useTheme } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
-import Container from '@mui/material/Container';
 import * as React from 'react';
 import { useColorMode } from '../contexts/ColorModeContext';
 import { HeaderDesktop } from './HeaderDesktop';
@@ -37,10 +36,10 @@ export const Header = () => {
                   ? 'rgb(2 12 27 / 70%) 0px 10px 30px -10px'
                   : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
          }}>
-         <Container maxWidth="xl">
+         <Box sx={{ pl: 3, pr: 3 }}>
             <HeaderDesktop items={items} sx={{ display: { xs: 'none', md: 'flex' } }} />
             <HeaderMobile items={items} sx={{ display: { xs: 'flex', md: 'none' } }} />
-         </Container>
+         </Box>
       </AppBar>
    );
 };
