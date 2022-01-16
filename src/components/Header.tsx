@@ -33,7 +33,7 @@ export const Header = () => {
             backgroundColor: theme.palette.background.default,
             boxShadow:
                colorMode === 'dark'
-                  ? 'rgb(2 12 27 / 70%) 0px 10px 30px -10px'
+                  ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
                   : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
          }}>
          <Box sx={{ pl: 3, pr: 3 }}>
