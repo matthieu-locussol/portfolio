@@ -35,6 +35,9 @@ export const darkTheme: Theme = createTheme({
          primary: DARK_TEXT_PRIMARY,
          secondary: DARK_TEXT_SECONDARY,
       },
+      action: {
+         disabled: DARK_PRIMARY_MAIN,
+      },
    },
    typography: {
       fontFamily:

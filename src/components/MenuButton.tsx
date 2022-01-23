@@ -16,6 +16,7 @@ import {
 } from '@mui/material';
 import { TransitionProps } from '@mui/material/transitions';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { useColorMode } from '../contexts/ColorModeContext';
 import { ColorModeButton } from './ColorModeButton';
@@ -35,6 +36,7 @@ interface MenuButtonProps {
 
 export const MenuButton = ({ items }: MenuButtonProps) => {
    const theme = useTheme();
+   const router = useRouter();
    const { colorMode } = useColorMode();
    const [open, setOpen] = useState(false);
 
@@ -83,9 +85,19 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
                {items.map((item) => (
                   <React.Fragment key={item.name}>
                      <Link href={item.href} passHref key={item.name}>
-                        <ListItem button sx={{ p: 2 }}>
+                        <ListItem
+                           disabled={item.href === router.pathname}
+                           button
+                           sx={{ p: 2, opacity: '1 !important' }}>
                            <ListItemText
-                              primary={<Typography sx={{ fontSize: 18 }}>{item.name}</Typography>}
+                              primary={
+                                 <Typography
+                                    color={item.href === router.pathname ? 'primary' : 'default'}
+                                    sx={{ fontSize: 18 }}>
+                                    {item.href === router.pathname && '▹ '}
+                                    {item.name}
+                                 </Typography>
+                              }
                            />
                         </ListItem>
                      </Link>

@@ -36,6 +36,9 @@ export const lightTheme: Theme = createTheme({
          primary: LIGHT_TEXT_PRIMARY,
          secondary: LIGHT_TEXT_SECONDARY,
       },
+      action: {
+         disabled: LIGHT_PRIMARY_MAIN,
+      },
    },
    typography: {
       fontFamily:
