@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/matthieu-locussol/portfolio/compare/v1.3.0...v1.4.0) (2022-01-23)
+
+
+### Features
+
+* added the about page for both desktop & mobile ([860ca33](https://github.com/matthieu-locussol/portfolio/commit/860ca336ac19316fefb85f1ce78cfaa18ad78d3f))
+* added the work page ([de96793](https://github.com/matthieu-locussol/portfolio/commit/de96793f91e484dad1703965a6aa23c48bdaa014))
+* menu buttons can be active for both mobile & desktop ([d8e7694](https://github.com/matthieu-locussol/portfolio/commit/d8e76944353255c8cad4c471317027df02788b23))
+* updated homepage content & style ([18297f6](https://github.com/matthieu-locussol/portfolio/commit/18297f6e44d941b03600fd2d13358659d6cd4797))
+
+
+### Bug Fixes
+
+* updated README badges ([e4d6cfa](https://github.com/matthieu-locussol/portfolio/commit/e4d6cfae28056ec45231fb29b2bb8f91576a6e6e))
+
 ## [1.3.0](https://github.com/matthieu-locussol/portfolio/compare/v1.2.3...v1.3.0) (2022-01-16)
 
 
