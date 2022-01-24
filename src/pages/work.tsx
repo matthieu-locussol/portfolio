@@ -25,6 +25,8 @@ export default () => {
                borderTop: `1px solid ${theme.palette.text.secondary}`,
                ml: -4,
                mr: -4,
+               mt: 2,
+               pt: 2,
                backgroundColor: theme.palette.background.paper,
             }}>
             <Container

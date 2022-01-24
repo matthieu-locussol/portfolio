@@ -5,7 +5,7 @@ import { Layout } from '../components/Layout';
 export default () => {
    return (
       <Layout>
-         <Container maxWidth="md" sx={{ pt: { xs: 4, md: 14 }, pb: 4 }}>
+         <Container maxWidth="md" sx={{ pt: { xs: 4, md: 10 }, pb: 4 }}>
             <Typography
                gutterBottom
                variant="subtitle1"
