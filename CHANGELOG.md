@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/matthieu-locussol/portfolio/compare/v1.3.0...v1.5.0) (2022-01-24)
+
+
+### Features
+
+* added the about page for both desktop & mobile ([860ca33](https://github.com/matthieu-locussol/portfolio/commit/860ca336ac19316fefb85f1ce78cfaa18ad78d3f))
+* added the articles page ([f5c9dd7](https://github.com/matthieu-locussol/portfolio/commit/f5c9dd76d5a97eb6f395b6b845b638457854fab0))
+* added the work page ([ea0dc2c](https://github.com/matthieu-locussol/portfolio/commit/ea0dc2c7871528d015f3cc61868cc387289c43cf))
+* menu buttons can be active for both mobile & desktop ([62c6c27](https://github.com/matthieu-locussol/portfolio/commit/62c6c279f3af27c095be75f39430c36b45dfedb5))
+* updated homepage content & style ([18297f6](https://github.com/matthieu-locussol/portfolio/commit/18297f6e44d941b03600fd2d13358659d6cd4797))
+
+
+### Bug Fixes
+
+* updated README badges ([e4d6cfa](https://github.com/matthieu-locussol/portfolio/commit/e4d6cfae28056ec45231fb29b2bb8f91576a6e6e))
+
 ## [1.4.0](https://github.com/matthieu-locussol/portfolio/compare/v1.3.0...v1.4.0) (2022-01-23)
 
 
