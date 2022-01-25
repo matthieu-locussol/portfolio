@@ -9,7 +9,13 @@ export const CareerEntry = ({ label, content }: CareerEntryProps) => {
    return (
       <>
          <Divider sx={{ mt: 2, mb: 2 }} />
-         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+         <Box
+            sx={{
+               display: 'flex',
+               flexDirection: { xs: 'column', md: 'row' },
+               justifyContent: 'space-between',
+               alignItems: { xs: 'stretch', md: 'center' },
+            }}>
             <Typography variant="button" fontSize="15px" fontWeight="600" sx={{ minWidth: 150 }}>
                {label}
             </Typography>

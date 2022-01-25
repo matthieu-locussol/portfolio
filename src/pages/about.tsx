@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { CareerCard } from '../components/CareerCard';
 import { ExternalLink } from '../components/ExternalLink';
 import { Layout } from '../components/Layout';
+import { EDUCATIONS } from '../data/educations';
 
 export default () => {
    const theme = useTheme();
@@ -94,8 +95,7 @@ export default () => {
             <Container
                maxWidth="lg"
                sx={{
-                  pt: 4,
-                  pb: 4,
+                  p: 4,
                   mb: -4,
                   display: 'flex',
                   flexDirection: { xs: 'column', md: 'row' },
@@ -105,42 +105,14 @@ export default () => {
                   sx={{
                      display: 'flex',
                      flexDirection: 'column',
+                     p: { xs: 0, sm: 4, md: 0 },
                   }}>
                   <Typography gutterBottom variant="h4">
                      Educations
                   </Typography>
-                  <CareerCard
-                     title="Master's Degree in Computer Science"
-                     tags={['2017 -> 2019', 'ENSEEIHT', 'France']}
-                     active={true}
-                     entries={[
-                        [
-                           'Full title',
-                           "Master's Degree in Computer Science and Applied Mathematics, with Honors",
-                        ],
-                        ['Institution', 'INPT-ENSEEIHT (Toulouse, France)'],
-                        [
-                           'Subjects',
-                           '▹ Cloud and Big Data ▹ Continuous integration ▹ Software development ▹ Computer forensics ▹ Distributed computing ▹ Computer networks ▹ Logic and proof',
-                        ],
-                     ]}
-                  />
-                  <CareerCard
-                     title="Bachelor's Degree in Computer Science"
-                     tags={['2014 -> 2017', 'Paul Sabatier', 'France']}
-                     active={false}
-                     entries={[
-                        [
-                           'Full title',
-                           "Bachelor's Degree specialized in Computer Science, with Honors. Ranked 2/129",
-                        ],
-                        ['Institution', 'Paul Sabatier University (Toulouse, France)'],
-                        [
-                           'Subjects',
-                           '▹ System programming ▹ Object-oriented design and programming ▹ Functional programming ▹ Automata theory ▹ Databases ▹ Artificial intelligence ▹ Cyber security ▹ Parallel programming',
-                        ],
-                     ]}
-                  />
+                  {EDUCATIONS.map((education) => (
+                     <CareerCard {...education} />
+                  ))}
                </Box>
             </Container>
          </Box>

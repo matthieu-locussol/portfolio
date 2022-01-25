@@ -1,15 +1,10 @@
 import { Box, Card, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 import { useColorMode } from '../contexts/ColorModeContext';
+import { Article } from '../data/articles';
 import { ExternalLink } from './ExternalLink';
 
-interface ArticleCardProps {
-   title: string;
-   content: string;
-   date: string;
-   picture: string;
-   link: string;
-}
+interface ArticleCardProps extends Article {}
 
 export const ArticleCard = ({ title, content, date, picture, link }: ArticleCardProps) => {
    const theme = useTheme();
@@ -17,6 +12,7 @@ export const ArticleCard = ({ title, content, date, picture, link }: ArticleCard
 
    return (
       <Card
+         variant="outlined"
          sx={{
             p: 0,
             borderRadius: 2,
@@ -27,6 +23,7 @@ export const ArticleCard = ({ title, content, date, picture, link }: ArticleCard
                      ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
                      : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
             },
+            backgroundColor: theme.palette.background.default,
          }}>
          <ExternalLink href={link}>
             <Image src={picture} width={960} height={360} layout="responsive" />

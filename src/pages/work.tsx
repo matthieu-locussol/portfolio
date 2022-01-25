@@ -32,8 +32,7 @@ export default () => {
             <Container
                maxWidth="lg"
                sx={{
-                  pt: 4,
-                  pb: 4,
+                  p: 4,
                   mb: -4,
                   display: 'flex',
                   flexDirection: { xs: 'column', md: 'row' },
@@ -43,6 +42,7 @@ export default () => {
                   sx={{
                      display: 'flex',
                      flexDirection: 'column',
+                     p: { xs: 0, sm: 4, md: 0 },
                   }}>
                   <Typography gutterBottom variant="h4">
                      Careers

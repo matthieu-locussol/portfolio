@@ -11,7 +11,6 @@ export default (props: AppProps) => {
    return (
       <ColorModeProvider>
          <Head>
-            <html lang="en" prefix="og: http://ogp.me/ns#" />
             <title itemProp="name" lang="en">
                Matthieu Locussol | Software Engineer
             </title>
@@ -39,7 +38,7 @@ export default (props: AppProps) => {
             />
             <meta
                name="keywords"
-               content="Matthieu Locussol, Matthieu, Locussol, software engineer, software architecture, galadrim, c, c++, python, javascript, typescript, vercel, github, gitlab, innovation consulting, innovation, consulting, freelance"
+               content="Matthieu Locussol, Matthieu, Locussol, software engineer, software architecture, galadrim, c, c++, python, javascript, typescript, react, python, vercel, github, gitlab, aws, gcp, innovation consulting, innovation, consulting, freelance"
             />
             <meta
                name="google-site-verification"
@@ -48,7 +47,7 @@ export default (props: AppProps) => {
             <meta property="og:title" content="Matthieu Locussol | Software Engineer" />
             <meta
                property="og:description"
-               content="Matthieu Locussol is a software engineer currently working in freelance who enjoys architecting & building applications."
+               content="Matthieu Locussol is a web developer and software engineer who enjoys architecting & building wonderful applications."
             />
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://www.matthieu-locussol.com" />

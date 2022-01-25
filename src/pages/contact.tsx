@@ -1,39 +1,44 @@
 import { Button, Container, Typography } from '@mui/material';
-import { ExternalLink } from '../components/ExternalLink';
 import { Layout } from '../components/Layout';
 
 export default () => {
    return (
       <Layout>
-         <Container maxWidth="md" sx={{ pt: { xs: 4, md: 10 }, pb: 4 }}>
+         <Container
+            maxWidth="md"
+            sx={{
+               pt: { xs: 4, md: 10 },
+               pb: 4,
+               display: 'flex',
+               flexDirection: 'column',
+               justifyContent: 'center',
+               alignItems: 'center',
+               textAlign: 'center',
+            }}>
             <Typography
                gutterBottom
                variant="subtitle1"
                color="primary"
                sx={{ fontFamily: 'Fira Code', fontSize: 18, mb: 2 }}>
-               Hi, my name is
+               What's Next?
             </Typography>
             <Typography gutterBottom variant="h2" sx={{ fontSize: 54 }}>
-               Matthieu Locussol.
-            </Typography>
-            <Typography gutterBottom variant="h2" color="textSecondary" sx={{ fontSize: 54 }}>
-               I am a software engineer.
+               Get In Touch
             </Typography>
             <Typography
                gutterBottom
                variant="subtitle1"
                color="textSecondary"
-               sx={{ maxWidth: 500, lineHeight: '28px', mt: 4 }}>
-               I'm a software engineer based in the south of France, working as a full-time full
-               remote worker at <ExternalLink href="https://galadrim.fr/">Galadrim</ExternalLink>. I
-               love architecting & building high-quality softwares and intuitive web applications.
+               sx={{ maxWidth: 600, lineHeight: '28px', mt: 4 }}>
+               I am listening to all opportunities. Whether you have a question, a potential project
+               or just want to say hi, I will get back to you as soon as possible!
             </Typography>
             <Button
                size="large"
                variant="outlined"
                sx={{ mt: 6, p: '20px 28px', fontSize: 16 }}
                href="mailto:dev.matthieu.locussol@gmail.com">
-               Get In Touch
+               Say Hello
             </Button>
          </Container>
       </Layout>
