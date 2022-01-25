@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/matthieu-locussol/portfolio/compare/v1.5.0...v1.6.0) (2022-01-25)
+
+
+### Features
+
+* added contact page & updated pages paddings and margins as well as cards responsiveness ([d845758](https://github.com/matthieu-locussol/portfolio/commit/d845758b413a13fc18a54ead833e082c3fbf47b9))
+
 ## [1.5.0](https://github.com/matthieu-locussol/portfolio/compare/v1.3.0...v1.5.0) (2022-01-24)
 
 
