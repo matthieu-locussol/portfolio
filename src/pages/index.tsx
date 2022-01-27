@@ -2,7 +2,7 @@ import { Button, Container, Typography } from '@mui/material';
 import { ExternalLink } from '../components/ExternalLink';
 import { Layout } from '../components/Layout';
 
-export default () => {
+const Home = () => {
    return (
       <Layout>
          <Container maxWidth="md" sx={{ pt: { xs: 4, md: 10 }, pb: 4 }}>
@@ -39,3 +39,5 @@ export default () => {
       </Layout>
    );
 };
+
+export default Home;

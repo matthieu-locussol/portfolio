@@ -3,7 +3,7 @@ import { CareerCard } from '../components/CareerCard';
 import { ExternalLink } from '../components/ExternalLink';
 import { Layout } from '../components/Layout';
 
-export default () => {
+const Work = () => {
    const theme = useTheme();
 
    return (
@@ -200,3 +200,5 @@ export default () => {
       </Layout>
    );
 };
+
+export default Work;

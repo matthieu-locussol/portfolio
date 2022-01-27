@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout';
 import { ARTICLES } from '../data/articles';
 import { chunk } from '../utils/chunk';
 
-export default () => {
+const Articles = () => {
    const theme = useTheme();
 
    return (
@@ -71,3 +71,5 @@ export default () => {
       </Layout>
    );
 };
+
+export default Articles;

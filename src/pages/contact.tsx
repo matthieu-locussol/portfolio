@@ -1,7 +1,7 @@
 import { Button, Container, Typography } from '@mui/material';
 import { Layout } from '../components/Layout';
 
-export default () => {
+const Contact = () => {
    return (
       <Layout>
          <Container
@@ -44,3 +44,5 @@ export default () => {
       </Layout>
    );
 };
+
+export default Contact;

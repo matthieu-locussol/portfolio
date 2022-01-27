@@ -5,7 +5,7 @@ import { ExternalLink } from '../components/ExternalLink';
 import { Layout } from '../components/Layout';
 import { EDUCATIONS } from '../data/educations';
 
-export default () => {
+const About = () => {
    const theme = useTheme();
 
    return (
@@ -119,3 +119,5 @@ export default () => {
       </Layout>
    );
 };
+
+export default About;
