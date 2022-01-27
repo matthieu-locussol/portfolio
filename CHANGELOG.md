@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/matthieu-locussol/portfolio/compare/v1.7.0...v1.8.0) (2022-01-27)
+
+
+### Features
+
+* added chunk & range specs ([b979c5b](https://github.com/matthieu-locussol/portfolio/commit/b979c5b9d3f21824c5fb7ba8c1f2dbaf52731a5b))
+* added other project card and their data ([75d0801](https://github.com/matthieu-locussol/portfolio/commit/75d0801e8764d5be39e32aeb00c5f85cc07af00c))
+
+
+### Bug Fixes
+
+* pages components are named to allow fast refresh correctly ([a5a6bf4](https://github.com/matthieu-locussol/portfolio/commit/a5a6bf4f0842a4f1c273841628f560d759113efc))
+
 ## [1.7.0](https://github.com/matthieu-locussol/portfolio/compare/v1.6.0...v1.7.0) (2022-01-27)
 
 
