@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/matthieu-locussol/portfolio/compare/v1.6.0...v1.7.0) (2022-01-27)
+
+
+### Features
+
+* added GitHub & Link icons components ([47016c4](https://github.com/matthieu-locussol/portfolio/commit/47016c4f684efd06e708845999cb787fe70e9e5e))
+* added InternalLink component ([cac7897](https://github.com/matthieu-locussol/portfolio/commit/cac7897de063479662be5aacbec759f6157d7f8c))
+* added projects data ([95d56e7](https://github.com/matthieu-locussol/portfolio/commit/95d56e724101482a419173c69c397d497f791187))
+* added the portfolio page ([37ef9fe](https://github.com/matthieu-locussol/portfolio/commit/37ef9fe6b066584952e965cf017bbf34e00f7563))
+
 ## [1.6.0](https://github.com/matthieu-locussol/portfolio/compare/v1.5.0...v1.6.0) (2022-01-25)
 
 
