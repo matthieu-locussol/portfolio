@@ -3,7 +3,9 @@ import { InternalLink } from '../components/InternalLink';
 import { Layout } from '../components/Layout';
 import { PortfolioCardDesktop } from '../components/PortfolioCardDesktop';
 import { PortfolioCardMobile } from '../components/PortfolioCardMobile';
-import { FEATURED_PROJECTS } from '../data/projects';
+import { PortfolioCardOther } from '../components/PortfolioCardOther';
+import { FEATURED_PROJECTS, OTHER_PROJECTS } from '../data/projects';
+import { chunk } from '../utils/chunk';
 
 const Portfolio = () => {
    const theme = useTheme();
@@ -69,7 +71,31 @@ const Portfolio = () => {
             </Container>
          </Box>
          <Container maxWidth="lg" sx={{ pt: 6, pb: 4 }}>
-            <Typography variant="h4">Other Projects</Typography>
+            <Typography gutterBottom variant="h4" sx={{ mb: 4 }}>
+               Other Projects
+            </Typography>
+            {chunk(OTHER_PROJECTS, 2).map((projects) => (
+               <Box
+                  sx={{
+                     display: 'grid',
+                     gridTemplateColumns: {
+                        xs: 'repeat(1, 1fr)',
+                        md: 'repeat(2, 1fr)',
+                     },
+                     columnGap: 4,
+                     mb: 4,
+                     '& > *:first-child': {
+                        mb: { xs: 4, md: 0 },
+                     },
+                     ':last-child': {
+                        mb: 4,
+                     },
+                  }}>
+                  {projects.map((project) => (
+                     <PortfolioCardOther {...project} key={project.title} />
+                  ))}
+               </Box>
+            ))}
          </Container>
       </Layout>
    );
