@@ -32,13 +32,13 @@ export const FEATURED_PROJECTS: Project[] = [
       picture: '/projects/pokemine.png',
    },
    {
-      title: 'Novelly',
+      title: 'Portfolio',
       description:
-         'Novelly is a free online writing platform accessible to everyone. Its purpose is to provide a pleasant environment and writing tools supported by a strong underlying architecture.',
-      tags: ['Typescript', 'FaunaDB', 'AWS', 'Next.js', 'Material-UI'],
-      link: 'https://novelly.netlify.com/',
-      picture: '/projects/novelly.png',
-      github: 'https://github.com/matthieu-locussol/Novelly',
+         'My personal portfolio project is the website you are on! It uses TypeScript, MUI & Next.js and is available on GitHub.',
+      tags: ['Typescript', 'Next.js', 'Material-UI', 'Responsive'],
+      link: 'https://www.matthieu-locussol.com/',
+      picture: '/projects/portfolio.png',
+      github: 'https://github.com/matthieu-locussol/portfolio',
    },
    {
       title: 'Traycer',
@@ -59,6 +59,15 @@ export const OTHER_PROJECTS: OtherProject[] = [
       tags: ['Typescript', 'FaunaDB', 'Next.js', 'Scryfall API'],
       link: 'https://magicvault.vercel.app/',
       github: 'https://github.com/matthieu-locussol/magicvault',
+      type: 'web',
+   },
+   {
+      title: 'Novelly',
+      description:
+         'Novelly is a free online writing platform accessible to everyone. Its purpose is to provide a pleasant environment and writing tools supported by a strong underlying architecture.',
+      tags: ['Typescript', 'FaunaDB', 'AWS', 'Next.js', 'Material-UI'],
+      link: 'https://novelly.netlify.com/',
+      github: 'https://github.com/matthieu-locussol/Novelly',
       type: 'web',
    },
    {
