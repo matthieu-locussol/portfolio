@@ -53,8 +53,8 @@ export default (props: AppProps) => {
             <meta property="og:url" content="https://www.matthieu-locussol.com" />
             <meta property="og:site_name" content="Matthieu Locussol | Software Engineer" />
             <meta property="og:image" content={`https://www.matthieu-locussol.com/og.png`} />
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
+            <meta property="og:image:width" content="1439" />
+            <meta property="og:image:height" content="763" />
             <meta property="og:image:type" content="image/png" />
             <meta property="og:locale" content="en_US" />
             <meta itemProp="name" content="Matthieu Locussol | Software Engineer" />
