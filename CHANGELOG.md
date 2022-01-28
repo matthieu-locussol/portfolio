@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/matthieu-locussol/portfolio/compare/v1.8.0...v1.9.0) (2022-01-28)
+
+
+### Features
+
+* added SocialMenu & corresponding icons ([68fff66](https://github.com/matthieu-locussol/portfolio/commit/68fff66f2343053a30c48c9d82b8244e5760dcfb))
+
 ## [1.8.0](https://github.com/matthieu-locussol/portfolio/compare/v1.7.0...v1.8.0) (2022-01-27)
 
 
