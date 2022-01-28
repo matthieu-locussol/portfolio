@@ -1,6 +1,6 @@
 {
    "name": "portfolio",
-   "version": "1.9.0",
+   "version": "1.9.1",
    "description": "My personal portfolio project.",
    "repository": "git@github.com:matthieu-locussol/portfolio.git",
    "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com>",

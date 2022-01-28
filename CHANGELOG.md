@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.1](https://github.com/matthieu-locussol/portfolio/compare/v1.9.0...v1.9.1) (2022-01-28)
+
+
+### Features
+
+* added og images ([b73ffec](https://github.com/matthieu-locussol/portfolio/commit/b73ffec65a4d8ab3ec8febc7c6809047f43a352a))
+
 ## [1.9.0](https://github.com/matthieu-locussol/portfolio/compare/v1.8.0...v1.9.0) (2022-01-28)
 
 
