@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.2](https://github.com/matthieu-locussol/portfolio/compare/v1.9.1...v1.9.2) (2022-01-28)
+
+
+### Features
+
+* added a custom 404 page ([495ab50](https://github.com/matthieu-locussol/portfolio/commit/495ab508e0d2ffe2b827647957ce1c596b7de211))
+
 ### [1.9.1](https://github.com/matthieu-locussol/portfolio/compare/v1.9.0...v1.9.1) (2022-01-28)
 
 
