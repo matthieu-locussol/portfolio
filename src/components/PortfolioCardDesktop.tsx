@@ -1,5 +1,6 @@
 import type { BoxProps } from '@mui/material';
 import { Box, Card, Typography, useTheme } from '@mui/material';
+import NextImage from 'next/image';
 import { useColorMode } from '../contexts/ColorModeContext';
 import { Project } from '../data/projects';
 import { ExternalLink } from './ExternalLink';
@@ -28,26 +29,30 @@ export const PortfolioCardDesktop = ({
 
    const Image = () => (
       <Box sx={{ zIndex: 500 }}>
-         <ExternalLink href={link}>
-            <Box
-               component="img"
-               src={picture}
-               alt={title}
-               width={500}
-               height={370}
-               sx={{
+         <ExternalLink
+            href={link}
+            sx={{
+               '& img': {
                   opacity: 0.6,
                   borderRadius: 1,
                   transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
                   border:
                      colorMode === 'light'
-                        ? `1px solid ${theme.palette.text.primary}`
-                        : `1px solid rgba(255, 255, 255, 0.12)`,
+                        ? `1px solid ${theme.palette.text.primary} !important`
+                        : `1px solid rgba(255, 255, 255, 0.12) !important`,
                   ':hover': {
                      opacity: 1,
                      cursor: 'pointer',
                   },
-               }}
+               },
+            }}>
+            <NextImage
+               src={picture}
+               alt={title}
+               width={500}
+               height={370}
+               layout="fixed"
+               placeholder="blur"
             />
          </ExternalLink>
       </Box>

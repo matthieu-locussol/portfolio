@@ -1,4 +1,5 @@
 import { Box, Card, CardProps, Typography, useTheme } from '@mui/material';
+import Image from 'next/image';
 import { useColorMode } from '../contexts/ColorModeContext';
 import type { Project } from '../data/projects';
 import { ExternalLink } from './ExternalLink';
@@ -40,14 +41,15 @@ export const PortfolioCardMobile = ({
             ...sx,
          }}>
          <ExternalLink href={link}>
-            <img
+            <Image
                src={picture}
-               style={{
-                  width: '100%',
-                  height: '230px',
-                  objectFit: 'cover',
-                  objectPosition: 'right top',
-               }}
+               alt={title}
+               width={500}
+               height={190}
+               layout="responsive"
+               objectFit="cover"
+               objectPosition="right top"
+               placeholder="blur"
             />
          </ExternalLink>
          <Box sx={{ p: 2, mt: -2 }}>

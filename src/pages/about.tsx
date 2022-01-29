@@ -1,5 +1,6 @@
 import { Box, Container, Link, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
+import mePicture from '../../public/me.jpg';
 import { CareerCard } from '../components/CareerCard';
 import { ExternalLink } from '../components/ExternalLink';
 import { Layout } from '../components/Layout';
@@ -78,7 +79,13 @@ const About = () => {
                            },
                         },
                      }}>
-                     <Image src="/me.jpg" alt="Profile picture" width={320} height={320} />
+                     <Image
+                        src={mePicture}
+                        alt="Profile picture"
+                        width={320}
+                        height={320}
+                        placeholder="blur"
+                     />
                   </Link>
                </Box>
             </Box>

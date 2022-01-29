@@ -1,3 +1,8 @@
+import kanjishoPicture from '../../public/projects/kanjisho.png';
+import pokeminePicture from '../../public/projects/pokemine.png';
+import portfolioPicture from '../../public/projects/portfolio.png';
+import traycerPicture from '../../public/projects/traycer.png';
+
 export interface BaseProject {
    title: string;
    description: string;
@@ -11,7 +16,7 @@ export interface OtherProject extends BaseProject {
 }
 
 export interface Project extends BaseProject {
-   picture: string;
+   picture: StaticImageData;
 }
 
 export const FEATURED_PROJECTS: Project[] = [
@@ -21,7 +26,7 @@ export const FEATURED_PROJECTS: Project[] = [
          'Kanjisho is a modern Japanese dictionary one can use to find informations on kanjis, words, English translations, kanji strokes and more. It uses third-party sources to provide these data.',
       tags: ['Typescript', 'AWS', 'Next.js', 'SSG', 'Vercel'],
       link: 'https://www.kanjisho.com/',
-      picture: '/projects/kanjisho.png',
+      picture: kanjishoPicture,
    },
    {
       title: 'Pokémine',
@@ -29,7 +34,7 @@ export const FEATURED_PROJECTS: Project[] = [
          'Pokémine is a webtool allowing users to ease the trade messages generation for Pokémon bots. It uses data from PokéAPI, Smogon & others to provide presets and input validation.',
       tags: ['Typescript', 'Scraping', 'React.JS', 'MobX', 'ViteJS'],
       link: 'https://pokemine.vercel.app/',
-      picture: '/projects/pokemine.png',
+      picture: pokeminePicture,
    },
    {
       title: 'Portfolio',
@@ -37,7 +42,7 @@ export const FEATURED_PROJECTS: Project[] = [
          'My personal portfolio project is the website you are on! It uses TypeScript, MUI & Next.js and is available on GitHub.',
       tags: ['Typescript', 'Next.js', 'Material-UI', 'Responsive'],
       link: 'https://www.matthieu-locussol.com/',
-      picture: '/projects/portfolio.png',
+      picture: portfolioPicture,
       github: 'https://github.com/matthieu-locussol/portfolio',
    },
    {
@@ -46,7 +51,7 @@ export const FEATURED_PROJECTS: Project[] = [
          'Traycer is a little Ray-Tracer written in C++. Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane.',
       tags: ['C++', 'CMake', '3D Graphics', 'Cross-Platform'],
       link: 'https://matthieu-locussol.github.io/Traycer/',
-      picture: '/projects/traycer.png',
+      picture: traycerPicture,
       github: 'https://github.com/matthieu-locussol/Traycer',
    },
 ];
