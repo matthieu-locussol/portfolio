@@ -1,4 +1,5 @@
-import { createTheme, Theme } from '@mui/material';
+import type { Theme } from '@emotion/react';
+import { createTheme } from '@mui/material';
 import {
    DARK_BACKGROUND_DEFAULT,
    DARK_BACKGROUND_PAPER,

@@ -16,6 +16,13 @@
       "jsx": "preserve",
       "tsBuildInfoFile": ".tsbuildinfo"
    },
-   "include": ["index.d.ts", "next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", "next.config.js"],
+   "include": [
+      "index.d.ts",
+      "next-env.d.ts",
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "next.config.js",
+      "lint-staged.config.js"
+   ],
    "exclude": ["node_modules"]
 }

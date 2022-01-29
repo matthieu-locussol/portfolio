@@ -1,7 +1,7 @@
 import { Box, Card, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 import { useColorMode } from '../contexts/ColorModeContext';
-import { Article } from '../data/articles';
+import type { Article } from '../data/articles';
 import { ExternalLink } from './ExternalLink';
 
 interface ArticleCardProps extends Article {}

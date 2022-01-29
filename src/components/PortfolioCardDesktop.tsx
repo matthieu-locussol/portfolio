@@ -2,7 +2,7 @@ import type { BoxProps } from '@mui/material';
 import { Box, Card, Typography, useTheme } from '@mui/material';
 import NextImage from 'next/image';
 import { useColorMode } from '../contexts/ColorModeContext';
-import { Project } from '../data/projects';
+import type { Project } from '../data/projects';
 import { ExternalLink } from './ExternalLink';
 import { GitHubIcon } from './GitHubIcon';
 import { LinkIcon } from './LinkIcon';

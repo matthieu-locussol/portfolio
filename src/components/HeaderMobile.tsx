@@ -1,4 +1,5 @@
-import { Box, Toolbar, ToolbarProps } from '@mui/material';
+import type { ToolbarProps } from '@mui/material';
+import { Box, Toolbar } from '@mui/material';
 import { ColorModeButton } from './ColorModeButton';
 import type { MenuItem } from './Header';
 import { Logo } from './Logo';

@@ -14,7 +14,7 @@ import {
    Typography,
    useTheme,
 } from '@mui/material';
-import { TransitionProps } from '@mui/material/transitions';
+import type { TransitionProps } from '@mui/material/transitions';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';

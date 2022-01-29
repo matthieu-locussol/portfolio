@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@mui/material';
-import React, { PropsWithChildren, useContext, useEffect, useMemo, useState } from 'react';
+import type { PropsWithChildren } from 'react';
+import React, { useContext, useEffect, useMemo, useState } from 'react';
 import { darkTheme } from '../theme/dark';
 import { lightTheme } from '../theme/light';
 

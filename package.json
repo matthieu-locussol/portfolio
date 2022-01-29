@@ -19,8 +19,7 @@
       "release": "standard-version -a"
    },
    "lint-staged": {
-      "*.{ts,tsx,d.ts}": [
-         "tsc-files --noEmit",
+      "**/*.{ts,tsx,d.ts}": [
          "yarn check:eslint"
       ]
    },
