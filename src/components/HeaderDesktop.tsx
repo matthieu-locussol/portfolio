@@ -20,11 +20,11 @@ export const HeaderDesktop = ({ items, ...rest }: HeaderDesktopProps) => {
          <Box sx={{ flexGrow: 1 }}>
             {items.map((item) => (
                <Button
+                  key={item.name}
                   disabled={item.href === router.pathname}
                   href={item.href}
                   size="medium"
                   color="secondary"
-                  key={item.name}
                   sx={{ ml: 2 }}>
                   {item.href === router.pathname && '▹ '}
                   {item.name}

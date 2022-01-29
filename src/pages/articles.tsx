@@ -46,8 +46,9 @@ const Articles = () => {
                   <Typography gutterBottom variant="h4">
                      Technical
                   </Typography>
-                  {chunk(ARTICLES, 2).map((articles) => (
+                  {chunk(ARTICLES, 2).map((articles, idx) => (
                      <Box
+                        key={idx}
                         sx={{
                            display: 'grid',
                            gridTemplateColumns: { xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' },
@@ -61,7 +62,7 @@ const Articles = () => {
                            },
                         }}>
                         {articles.map((article) => (
-                           <ArticleCard {...article} />
+                           <ArticleCard key={article.title} {...article} />
                         ))}
                      </Box>
                   ))}

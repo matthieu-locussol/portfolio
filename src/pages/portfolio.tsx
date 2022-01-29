@@ -1,4 +1,5 @@
 import { Box, Container, Typography, useTheme } from '@mui/material';
+import React from 'react';
 import { InternalLink } from '../components/InternalLink';
 import { Layout } from '../components/Layout';
 import { PortfolioCardDesktop } from '../components/PortfolioCardDesktop';
@@ -53,7 +54,7 @@ const Portfolio = () => {
                      '& > *:not(:first-child)': { mt: { xs: 4, md: 12 } },
                   }}>
                   {FEATURED_PROJECTS.map((project, idx) => (
-                     <>
+                     <React.Fragment key={project.title}>
                         <PortfolioCardDesktop
                            {...project}
                            rtl={idx % 2 === 0}
@@ -65,7 +66,7 @@ const Portfolio = () => {
                            key={`${idx}-mobile`}
                            sx={{ display: { xs: 'flex', md: 'none' } }}
                         />
-                     </>
+                     </React.Fragment>
                   ))}
                </Box>
             </Container>
@@ -74,8 +75,9 @@ const Portfolio = () => {
             <Typography gutterBottom variant="h4" sx={{ mb: 4 }}>
                Other Projects
             </Typography>
-            {chunk(OTHER_PROJECTS, 2).map((projects) => (
+            {chunk(OTHER_PROJECTS, 2).map((projects, idx) => (
                <Box
+                  key={idx}
                   sx={{
                      display: 'grid',
                      gridTemplateColumns: {
@@ -92,7 +94,7 @@ const Portfolio = () => {
                      },
                   }}>
                   {projects.map((project) => (
-                     <PortfolioCardOther {...project} key={project.title} />
+                     <PortfolioCardOther key={project.title} {...project} />
                   ))}
                </Box>
             ))}

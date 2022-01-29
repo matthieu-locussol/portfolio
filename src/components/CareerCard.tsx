@@ -34,11 +34,11 @@ export const CareerCard = ({ title, company, tags, active, entries = [] }: Caree
          </Typography>
          <Box sx={{ mt: 1 }}>
             {tags.map((tag) => (
-               <CareerChip label={tag} active={active} key={tag} />
+               <CareerChip key={tag} label={tag} active={active} />
             ))}
          </Box>
          {entries.map(([label, content]) => (
-            <CareerEntry label={label} content={content} />
+            <CareerEntry key={label} label={label} content={content} />
          ))}
       </Card>
    );

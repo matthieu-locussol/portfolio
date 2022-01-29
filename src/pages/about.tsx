@@ -118,7 +118,7 @@ const About = () => {
                      Educations
                   </Typography>
                   {EDUCATIONS.map((education) => (
-                     <CareerCard {...education} />
+                     <CareerCard key={education.title} {...education} />
                   ))}
                </Box>
             </Container>
