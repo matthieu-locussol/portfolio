@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/matthieu-locussol/portfolio/compare/v1.9.2...v1.10.0) (2022-01-29)
+
+
+### Features
+
+* added manifest, robots, security & sitemap files ([cd1da7d](https://github.com/matthieu-locussol/portfolio/commit/cd1da7dd834695777ba69c61efe235b993e0a434))
+* added portfolio as a featured project ([12fd379](https://github.com/matthieu-locussol/portfolio/commit/12fd379bd753b0d2e5bbea1dfce6c3947e18d51f))
+* optimized images rendering ([c0440b0](https://github.com/matthieu-locussol/portfolio/commit/c0440b052f54e028b6587b11d56304383476b7e4))
+
+
+### Bug Fixes
+
+* updated map calls to set key to all of their children ([414eda4](https://github.com/matthieu-locussol/portfolio/commit/414eda4a33bc81ddeeebedfaedfd728b51b326cf))
+
 ### [1.9.2](https://github.com/matthieu-locussol/portfolio/compare/v1.9.1...v1.9.2) (2022-01-28)
 
 
