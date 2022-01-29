@@ -1,0 +1,3 @@
+Sitemap: https://www.matthieu-locussol.com/sitemap.xml
+User-agent: *
+Allow: /
