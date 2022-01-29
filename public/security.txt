@@ -1,0 +1,3 @@
+Contact: mailto:dev.matthieu.locussol@gmail.com
+Expires: 2032-12-30T23:00:00.000Z
+Preferred-Languages: en
