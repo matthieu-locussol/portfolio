@@ -7,6 +7,7 @@ const Home = () => {
       <Layout>
          <Container maxWidth="md" sx={{ pt: { xs: 4, md: 10 }, pb: 4 }}>
             <Typography
+               component="h1"
                gutterBottom
                variant="subtitle1"
                color="primary"
@@ -16,10 +17,16 @@ const Home = () => {
             <Typography gutterBottom variant="h2" sx={{ fontSize: 54 }}>
                Matthieu Locussol.
             </Typography>
-            <Typography gutterBottom variant="h2" color="textSecondary" sx={{ fontSize: 54 }}>
+            <Typography
+               component="h3"
+               gutterBottom
+               variant="h2"
+               color="textSecondary"
+               sx={{ fontSize: 54 }}>
                I am a software engineer.
             </Typography>
             <Typography
+               component="p"
                gutterBottom
                variant="subtitle1"
                color="textSecondary"

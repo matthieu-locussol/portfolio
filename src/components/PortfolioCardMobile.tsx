@@ -53,12 +53,12 @@ export const PortfolioCardMobile = ({
             />
          </ExternalLink>
          <Box sx={{ p: 2, mt: -2 }}>
-            <Typography component="h2" variant="h6">
+            <Typography component="h2" variant="h3">
                <ExternalLink
                   label="Visit project website"
                   href={link}
                   sx={{
-                     fontSize: 18,
+                     fontSize: 20,
                      transition: 'all 0.15s ease-out 0s',
                      color: theme.palette.text.primary,
                      textDecoration: 'none',
@@ -67,7 +67,7 @@ export const PortfolioCardMobile = ({
                   {title}
                </ExternalLink>
             </Typography>
-            <Typography gutterBottom component="h3" variant="button" color="primary">
+            <Typography gutterBottom component="p" variant="button" color="primary">
                {`▹ ${tags.join(' ▹ ')}`}
             </Typography>
             <Typography component="p" variant="body2" color="textSecondary" sx={{ mt: 1 }}>

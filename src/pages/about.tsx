@@ -12,7 +12,9 @@ const About = () => {
    return (
       <Layout>
          <Container maxWidth="lg" sx={{ pt: 2, pb: 4 }}>
-            <Typography variant="h3">About</Typography>
+            <Typography variant="h3" component="h1">
+               About
+            </Typography>
             <Box
                sx={{
                   display: 'flex',
@@ -21,6 +23,7 @@ const About = () => {
                }}>
                <Box>
                   <Typography
+                     component="p"
                      variant="subtitle1"
                      color="textSecondary"
                      sx={{ maxWidth: 500, mt: 2 }}>
@@ -30,6 +33,7 @@ const About = () => {
                      efficient ready-to-use tools.
                   </Typography>
                   <Typography
+                     component="p"
                      variant="subtitle1"
                      color="textSecondary"
                      sx={{ maxWidth: 500, mt: 2 }}>
@@ -120,7 +124,7 @@ const About = () => {
                      flexDirection: 'column',
                      p: { xs: 0, sm: 4, md: 0 },
                   }}>
-                  <Typography gutterBottom variant="h4">
+                  <Typography gutterBottom variant="h4" component="h2">
                      Educations
                   </Typography>
                   {EDUCATIONS.map((education) => (

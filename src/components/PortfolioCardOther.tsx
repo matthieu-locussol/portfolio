@@ -43,13 +43,19 @@ export const PortfolioCardOther = ({
             {github && <GitHubIcon link={github} sx={{ mr: 2 }} />}
             <LinkIcon link={link} />
          </Box>
-         <Typography gutterBottom variant="h6" color="secondary" fontWeight="600" sx={{ mt: 2 }}>
+         <Typography
+            component="h4"
+            gutterBottom
+            variant="h6"
+            color="secondary"
+            fontWeight="600"
+            sx={{ mt: 2 }}>
             {title}
          </Typography>
-         <Typography fontSize={15} lineHeight={1.7} color="secondary">
+         <Typography component="p" fontSize={15} lineHeight={1.7} color="secondary">
             {description}
          </Typography>
-         <Typography color="textSecondary" sx={{ mt: 2 }}>
+         <Typography component="p" color="textSecondary" sx={{ mt: 2 }}>
             {`▹ ${tags.join(' ▹ ')}`}
          </Typography>
       </Card>

@@ -69,12 +69,14 @@ export const PortfolioCardDesktop = ({
             pointerEvents: 'none',
          }}>
          <Typography
+            component="h2"
             variant="subtitle1"
             color="primary"
             sx={{ [property]: 'auto', fontFamily: 'Fira Code' }}>
             Featured project
          </Typography>
          <Typography
+            component="h3"
             gutterBottom
             variant="h5"
             color="textPrimary"
@@ -94,6 +96,7 @@ export const PortfolioCardDesktop = ({
                pointerEvents: 'auto',
             }}>
             <Typography
+               component="p"
                align={rtl ? 'right' : 'left'}
                fontSize={15}
                lineHeight={1.7}
@@ -102,6 +105,7 @@ export const PortfolioCardDesktop = ({
             </Typography>
          </Card>
          <Typography
+            component="p"
             variant="button"
             color="textSecondary"
             sx={{ [property]: 'auto', mt: 2, maxWidth: '66%' }}>

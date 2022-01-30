@@ -16,10 +16,15 @@ export const CareerEntry = ({ label, content }: CareerEntryProps) => {
                justifyContent: 'space-between',
                alignItems: { xs: 'stretch', md: 'center' },
             }}>
-            <Typography variant="button" fontSize="15px" fontWeight="600" sx={{ minWidth: 150 }}>
+            <Typography
+               component="h4"
+               variant="button"
+               fontSize="15px"
+               fontWeight="600"
+               sx={{ minWidth: 150 }}>
                {label}
             </Typography>
-            <Typography variant="body2" sx={{ lineHeight: '24px', width: '100%' }}>
+            <Typography component="p" variant="body2" sx={{ lineHeight: '24px', width: '100%' }}>
                {content}
             </Typography>
          </Box>

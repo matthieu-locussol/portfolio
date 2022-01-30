@@ -16,6 +16,7 @@ const Contact = () => {
                textAlign: 'center',
             }}>
             <Typography
+               component="h1"
                gutterBottom
                variant="subtitle1"
                color="primary"
@@ -26,6 +27,7 @@ const Contact = () => {
                Get In Touch
             </Typography>
             <Typography
+               component="p"
                gutterBottom
                variant="subtitle1"
                color="textSecondary"

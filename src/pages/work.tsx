@@ -9,9 +9,11 @@ const Work = () => {
    return (
       <Layout>
          <Container maxWidth="lg" sx={{ pt: 2, pb: 4 }}>
-            <Typography variant="h3">Work</Typography>
+            <Typography component="h1" variant="h3">
+               Work
+            </Typography>
             <Box>
-               <Typography variant="subtitle1" color="textSecondary" sx={{ mt: 2 }}>
+               <Typography component="p" variant="subtitle1" color="textSecondary" sx={{ mt: 2 }}>
                   As part of my work experience, I've been writing performant & scalable web
                   applications for a diverse array of customers and platforms. I have also been
                   communicating with different teams of engineers, researchers and designers on a
@@ -44,7 +46,7 @@ const Work = () => {
                      flexDirection: 'column',
                      p: { xs: 0, sm: 4, md: 0 },
                   }}>
-                  <Typography gutterBottom variant="h4">
+                  <Typography component="h2" gutterBottom variant="h4">
                      Careers
                   </Typography>
                   <CareerCard

@@ -14,9 +14,11 @@ const Portfolio = () => {
    return (
       <Layout>
          <Container maxWidth="lg" sx={{ pt: 2, pb: 4 }}>
-            <Typography variant="h3">Portfolio</Typography>
+            <Typography component="h1" variant="h3">
+               Portfolio
+            </Typography>
             <Box>
-               <Typography variant="subtitle1" color="textSecondary" sx={{ mt: 2 }}>
+               <Typography component="p" variant="subtitle1" color="textSecondary" sx={{ mt: 2 }}>
                   One of the coolest things about programming is that it allows you to bring your
                   ideas to life 💡 <br />
                   Here are some things I've built during my spare time, feel free to check them out!
@@ -75,7 +77,7 @@ const Portfolio = () => {
             </Container>
          </Box>
          <Container maxWidth="lg" sx={{ pt: 6, pb: 4 }}>
-            <Typography gutterBottom variant="h4" sx={{ mb: 4 }}>
+            <Typography component="h3" gutterBottom variant="h4" sx={{ mb: 4 }}>
                Other Projects
             </Typography>
             {chunk(OTHER_PROJECTS, 2).map((projects, idx) => (

@@ -28,7 +28,7 @@ export const CareerCard = ({ title, company, tags, active, entries = [] }: Caree
             }`,
             mb: 4,
          }}>
-         <Typography variant="h6" sx={{ fontWeight: 600 }}>
+         <Typography variant="h6" component="h3" sx={{ fontWeight: 600 }}>
             {title}
             {company ? (
                <ExternalLink

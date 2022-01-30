@@ -10,9 +10,11 @@ const Articles = () => {
    return (
       <Layout>
          <Container maxWidth="lg" sx={{ pt: 2, pb: 4 }}>
-            <Typography variant="h3">Articles</Typography>
+            <Typography component="h1" variant="h3">
+               Articles
+            </Typography>
             <Box>
-               <Typography variant="subtitle1" color="textSecondary" sx={{ mt: 2 }}>
+               <Typography component="p" variant="subtitle1" color="textSecondary" sx={{ mt: 2 }}>
                   I love writing articles, whether it's for my work or just as a hobby, sharing
                   technical knowledge on a subject is always an enjoyable exercise. I have written
                   articles in English and French, which you will find listed below.
@@ -43,7 +45,7 @@ const Articles = () => {
                      flexDirection: 'column',
                      p: { xs: 0, sm: 4, md: 0 },
                   }}>
-                  <Typography gutterBottom variant="h4">
+                  <Typography component="h2" gutterBottom variant="h4">
                      Technical
                   </Typography>
                   {chunk(ARTICLES, 2).map((articles, idx) => (
