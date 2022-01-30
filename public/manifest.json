@@ -9,8 +9,8 @@
          "type": "image/png"
       },
       {
-         "src": "/favicons/android-icon-192x192.png",
-         "sizes": "192x192",
+         "src": "/favicons/maskable.png",
+         "sizes": "512x512",
          "type": "image/png",
          "purpose": "maskable"
       }
