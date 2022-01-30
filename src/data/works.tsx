@@ -69,9 +69,13 @@ export const WORKS: Work[] = [
             'Description',
             <>
                {`▹ Worked with a R&D team of five researchers as a software engineer to improve `}
-               <ExternalLink href="http://opensand.org/content/home.php">OpenSAND</ExternalLink>
+               <ExternalLink label="OpenSAND homepage" href="http://opensand.org/content/home.php">
+                  OpenSAND
+               </ExternalLink>
                {`, a 10+ years old software promoted by the `}
-               <ExternalLink href="https://cnes.fr/en">CNES</ExternalLink>
+               <ExternalLink label="CNES homepage" href="https://cnes.fr/en">
+                  CNES
+               </ExternalLink>
                {` (french space center) and emulating satellite communication systems`}
                <br />
                {`▹ Architected an efficient and generic configuration library using C++ to define metamodels and datamodels that can be dynamically loaded and saved to files`}
