@@ -5,7 +5,7 @@ import React from 'react';
 import { ColorModeProvider } from '../contexts/ColorModeContext';
 import { DARK_BACKGROUND_DEFAULT } from '../theme/constants';
 
-export default (props: AppProps) => {
+const CustomApp = (props: AppProps) => {
    const { Component, pageProps } = props;
 
    return (
@@ -20,15 +20,7 @@ export default (props: AppProps) => {
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             <link
-               href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap"
-               rel="stylesheet"
-            />
-            <link
-               href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700;800&display=swap"
-               rel="stylesheet"
-            />
-            <link
-               href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+               href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Jost&family=Fira+Code&display=swap"
                rel="stylesheet"
             />
             <link rel="shortcut icon" href="/favicon.ico" />
@@ -111,3 +103,5 @@ export default (props: AppProps) => {
       </ColorModeProvider>
    );
 };
+
+export default CustomApp;
