@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.3](https://github.com/matthieu-locussol/portfolio/compare/v1.11.2...v1.11.3) (2022-01-30)
+
+
+### Bug Fixes
+
+* updated maskable icon size ([aa39fa0](https://github.com/matthieu-locussol/portfolio/commit/aa39fa01715771185e21ff72d235ada2ee0414a0))
+
 ### [1.11.2](https://github.com/matthieu-locussol/portfolio/compare/v1.11.1...v1.11.2) (2022-01-30)
 
 
