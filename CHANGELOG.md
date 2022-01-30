@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/matthieu-locussol/portfolio/compare/v1.9.2...v1.11.0) (2022-01-30)
+
+
+### Features
+
+* a11y for links ([24f7ecf](https://github.com/matthieu-locussol/portfolio/commit/24f7ecf478c2fb3684dcfff2f35fabc78a93635d))
+* added manifest, robots, security & sitemap files ([db081fb](https://github.com/matthieu-locussol/portfolio/commit/db081fb809ec50a3afda1ac03a52cbdac9d9ed88))
+* added portfolio as a featured project ([12fd379](https://github.com/matthieu-locussol/portfolio/commit/12fd379bd753b0d2e5bbea1dfce6c3947e18d51f))
+* added PWA support using next-pwa ([9e760ce](https://github.com/matthieu-locussol/portfolio/commit/9e760ce5de22c33c5568434705fc61feff5ffd63))
+* correctly ordered headlines & optimized articles covers ([1d8b556](https://github.com/matthieu-locussol/portfolio/commit/1d8b5563007613df2e39518a8f56739499a88821))
+* optimized images rendering ([c0440b0](https://github.com/matthieu-locussol/portfolio/commit/c0440b052f54e028b6587b11d56304383476b7e4))
+* updated resumes content ([4780bd2](https://github.com/matthieu-locussol/portfolio/commit/4780bd2a214640139043fc5ebda33a7702c56bf7))
+
+
+### Bug Fixes
+
+* optimized imported fonts ([3a6158b](https://github.com/matthieu-locussol/portfolio/commit/3a6158bbf6b648a2ee8b7879ad4a14ceeee07b15))
+* updated map calls to set key to all of their children ([414eda4](https://github.com/matthieu-locussol/portfolio/commit/414eda4a33bc81ddeeebedfaedfd728b51b326cf))
+
 ## [1.10.0](https://github.com/matthieu-locussol/portfolio/compare/v1.9.2...v1.10.0) (2022-01-29)
 
 
