@@ -115,7 +115,7 @@ export const PortfolioCardDesktop = ({
             sx={{
                [property]: 'auto',
                mt: 2,
-               ...(rtl && { '& > *:not(:first-child)': { [property]: 2 } }),
+               ...(rtl && { '& > *:not(:first-of-type)': { [property]: 2 } }),
                ...(!rtl && { '& > *:not(:last-child)': { [property]: 2 } }),
             }}>
             {github && <GitHubIcon link={github} />}

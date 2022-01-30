@@ -77,8 +77,8 @@ export const PortfolioCardMobile = ({
                sx={{
                   display: 'flex',
                   width: '100%',
-                  '& > *:first-child': { ml: 'auto' },
-                  '& > *:not(:first-child)': { ml: 2 },
+                  '& > *:first-of-type': { ml: 'auto' },
+                  '& > *:not(:first-of-type)': { ml: 2 },
                   mt: 2,
                }}>
                {github && <GitHubIcon link={github} />}

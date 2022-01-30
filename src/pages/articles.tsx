@@ -56,7 +56,7 @@ const Articles = () => {
                            gridTemplateColumns: { xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' },
                            columnGap: 4,
                            marginBottom: 4,
-                           '& > *:first-child': {
+                           '& > *:first-of-type': {
                               mb: { xs: 4, md: 0 },
                            },
                            ':last-child': {

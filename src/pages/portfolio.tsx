@@ -56,7 +56,7 @@ const Portfolio = () => {
                      display: 'flex',
                      flexDirection: 'column',
                      p: { xs: 0, sm: 4, md: 0 },
-                     '& > *:not(:first-child)': { mt: { xs: 4, md: 12 } },
+                     '& > *:not(:first-of-type)': { mt: { xs: 4, md: 12 } },
                   }}>
                   {FEATURED_PROJECTS.map((project, idx) => (
                      <React.Fragment key={project.title}>
@@ -91,7 +91,7 @@ const Portfolio = () => {
                      },
                      columnGap: 4,
                      mb: 4,
-                     '& > *:first-child': {
+                     '& > *:first-of-type': {
                         mb: { xs: 4, md: 0 },
                      },
                      ':last-child': {
