@@ -34,14 +34,20 @@ const About = () => {
                      color="textSecondary"
                      sx={{ maxWidth: 500, mt: 2 }}>
                      Shortly after graduating from{' '}
-                     <ExternalLink href="http://www.enseeiht.fr/en/index.html">
+                     <ExternalLink
+                        label="ENSEEIHT website"
+                        href="http://www.enseeiht.fr/en/index.html">
                         ENSEEIHT
                      </ExternalLink>
                      , I joined the engineering team at{' '}
-                     <ExternalLink href="https://galadrim.fr/">Galadrim</ExternalLink> where I work
-                     on challenging and purposeful projects daily. Besides my work, I work as a
-                     freelance consultant in innovation funding at{' '}
-                     <ExternalLink href="http://www.iii-financements.com/">
+                     <ExternalLink label="Galadrim website" href="https://galadrim.fr/">
+                        Galadrim
+                     </ExternalLink>{' '}
+                     where I work on challenging and purposeful projects daily. Besides my work, I
+                     work as a freelance consultant in innovation funding at{' '}
+                     <ExternalLink
+                        label="III Financements website"
+                        href="http://www.iii-financements.com/">
                         III Financements
                      </ExternalLink>
                      .

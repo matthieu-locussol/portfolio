@@ -40,7 +40,7 @@ export const PortfolioCardMobile = ({
             backgroundColor: theme.palette.background.default,
             ...sx,
          }}>
-         <ExternalLink href={link}>
+         <ExternalLink label="Visit project website" href={link}>
             <Image
                src={picture}
                alt={title}
@@ -55,6 +55,7 @@ export const PortfolioCardMobile = ({
          <Box sx={{ p: 2, mt: -2 }}>
             <Typography component="h2" variant="h6">
                <ExternalLink
+                  label="Visit project website"
                   href={link}
                   sx={{
                      fontSize: 18,

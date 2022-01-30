@@ -45,7 +45,11 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
 
    return (
       <React.Fragment>
-         <IconButton color="secondary" sx={{ pl: 1, pr: 1, ml: 2 }} onClick={handleOpen}>
+         <IconButton
+            aria-label="Open menu"
+            color="secondary"
+            sx={{ pl: 1, pr: 1, ml: 2 }}
+            onClick={handleOpen}>
             <MenuIcon />
          </IconButton>
          <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>

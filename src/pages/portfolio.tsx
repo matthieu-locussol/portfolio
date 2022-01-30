@@ -21,7 +21,10 @@ const Portfolio = () => {
                   ideas to life 💡 <br />
                   Here are some things I've built during my spare time, feel free to check them out!
                   If you have any question regarding one project,{' '}
-                  <InternalLink href="/contact">feel free to reach me out</InternalLink>.
+                  <InternalLink label="Contact page" href="/contact">
+                     feel free to reach me out
+                  </InternalLink>
+                  .
                </Typography>
             </Box>
          </Container>

@@ -30,7 +30,13 @@ export const CareerCard = ({ title, company, tags, active, entries = [] }: Caree
          }}>
          <Typography variant="h6" sx={{ fontWeight: 600 }}>
             {title}
-            {company ? <ExternalLink href={company.link}>{` @ ${company.name}`}</ExternalLink> : ''}
+            {company ? (
+               <ExternalLink
+                  label={`Visit ${company.name} website`}
+                  href={company.link}>{` @ ${company.name}`}</ExternalLink>
+            ) : (
+               ''
+            )}
          </Typography>
          <Box sx={{ mt: 1 }}>
             {tags.map((tag) => (

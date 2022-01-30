@@ -12,6 +12,7 @@ export const Logo = ({ size }: LogoProps) => {
    return (
       <RouterLink href="/" passHref>
          <Link
+            aria-label="Go back to homepage"
             sx={{
                display: 'flex',
                maxWidth: `${size}px`,

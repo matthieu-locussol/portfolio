@@ -107,11 +107,15 @@ const Work = () => {
                            'Description',
                            <>
                               {`▹ Worked with a R&D team of five researchers as a software engineer to improve `}
-                              <ExternalLink href="http://opensand.org/content/home.php">
+                              <ExternalLink
+                                 label="OpenSAND website"
+                                 href="http://opensand.org/content/home.php">
                                  OpenSAND
                               </ExternalLink>
                               {`, a 10+ years old software promoted by the `}
-                              <ExternalLink href="https://cnes.fr/en">CNES</ExternalLink>
+                              <ExternalLink label="CNES website" href="https://cnes.fr/en">
+                                 CNES
+                              </ExternalLink>
                               {` (french space center) and emulating satellite communication systems`}
                               <br />
                               {`▹ Architected an efficient and generic configuration library using C++ to define metamodels and datamodels that can be dynamically loaded and saved to files`}
@@ -142,11 +146,15 @@ const Work = () => {
                               {`▹ Defined a state-of-the-art of existing tools used for modeling Domain-Specific Languages using the web as a support platform`}
                               <br />
                               {`▹ Architected a solution to use Xtext, Sirius and Acceleo on the web using C++, TypeScript, the `}
-                              <ExternalLink href="https://microsoft.github.io/language-server-protocol/">
+                              <ExternalLink
+                                 label="Language Server Protocol webpage"
+                                 href="https://microsoft.github.io/language-server-protocol/">
                                  LSP
                               </ExternalLink>
                               {` and the `}
-                              <ExternalLink href="https://obeonetwork.github.io/GraphicalServerProtocol/">
+                              <ExternalLink
+                                 label="Graphical Server Protocol webpage"
+                                 href="https://obeonetwork.github.io/GraphicalServerProtocol/">
                                  GSP
                               </ExternalLink>
                            </>,
@@ -170,11 +178,15 @@ const Work = () => {
                            'Description',
                            <>
                               {`▹ Collaborated with a `}
-                              <ExternalLink href="https://www.irit.fr/STORM/site/team/">
+                              <ExternalLink
+                                 label="IRIT Team webpage"
+                                 href="https://www.irit.fr/STORM/site/team/">
                                  team
                               </ExternalLink>
                               {` of research engineers to enhance `}
-                              <ExternalLink href="https://github.com/STORM-IRIT/Radium-Engine">
+                              <ExternalLink
+                                 label="Radium-Engine GitHub repository"
+                                 href="https://github.com/STORM-IRIT/Radium-Engine">
                                  Radium-Engine
                               </ExternalLink>
                               {`, a 3D rendering engine used by university teachers for their Master's courses`}
@@ -182,7 +194,9 @@ const Work = () => {
                               {`▹ Architected a better OpenGL abstraction to the Radium-Engine and allowed easier code maintenance related to future improvements of the OpenGL specification`}
                               <br />
                               {`▹ Helped working on `}
-                              <ExternalLink href="https://github.com/mmp/pbrt-v3">
+                              <ExternalLink
+                                 label="PBRT v3 repository"
+                                 href="https://github.com/mmp/pbrt-v3">
                                  PBRT
                               </ExternalLink>
                               {` integration within the engine`}

@@ -12,6 +12,7 @@ export const CodingameIcon = ({ link, sx, ...rest }: CodingameIconProps) => {
 
    return (
       <ExternalLink
+         label="Visit Codingame profile"
          href={link}
          sx={{
             pointerEvents: 'auto',

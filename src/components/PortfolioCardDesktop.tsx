@@ -30,6 +30,7 @@ export const PortfolioCardDesktop = ({
    const Image = () => (
       <Box sx={{ zIndex: 500 }}>
          <ExternalLink
+            label="Visit project website"
             href={link}
             sx={{
                '& img': {

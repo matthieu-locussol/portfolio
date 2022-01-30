@@ -12,6 +12,7 @@ export const GitHubIcon = ({ link, sx, ...rest }: GitHubIconProps) => {
 
    return (
       <ExternalLink
+         label="Visit GitHub page"
          href={link}
          sx={{
             pointerEvents: 'auto',

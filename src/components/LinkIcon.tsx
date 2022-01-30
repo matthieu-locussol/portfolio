@@ -12,6 +12,7 @@ export const LinkIcon = ({ link, sx, ...rest }: LinkIconProps) => {
 
    return (
       <ExternalLink
+         label="Visit project website"
          href={link}
          sx={{
             pointerEvents: 'auto',

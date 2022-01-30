@@ -25,7 +25,7 @@ export const ArticleCard = ({ title, content, date, picture, link }: ArticleCard
             },
             backgroundColor: theme.palette.background.default,
          }}>
-         <ExternalLink href={link}>
+         <ExternalLink label="Read article content" href={link}>
             <Image
                src={picture}
                alt={title}
@@ -41,6 +41,7 @@ export const ArticleCard = ({ title, content, date, picture, link }: ArticleCard
             </Typography>
             <Typography component="h2" variant="h6">
                <ExternalLink
+                  label="Read article content"
                   href={link}
                   sx={{
                      fontSize: 18,

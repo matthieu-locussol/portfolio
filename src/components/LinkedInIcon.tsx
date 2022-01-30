@@ -12,6 +12,7 @@ export const LinkedInIcon = ({ link, sx, ...rest }: LinkedInIconProps) => {
 
    return (
       <ExternalLink
+         label="Visit LinkedIn profile"
          href={link}
          sx={{
             pointerEvents: 'auto',

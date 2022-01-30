@@ -25,8 +25,12 @@ const Home = () => {
                color="textSecondary"
                sx={{ maxWidth: 500, lineHeight: '28px', mt: 4 }}>
                I'm a software engineer based in the south of France, working as a full-time full
-               remote worker at <ExternalLink href="https://galadrim.fr/">Galadrim</ExternalLink>. I
-               love architecting & building high-quality softwares and intuitive web applications.
+               remote worker at{' '}
+               <ExternalLink label="Galadrim website" href="https://galadrim.fr/">
+                  Galadrim
+               </ExternalLink>
+               . I love architecting & building high-quality softwares and intuitive web
+               applications.
             </Typography>
             <Button
                size="large"

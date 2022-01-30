@@ -7,7 +7,11 @@ export const ColorModeButton = () => {
    const { colorMode, toggleColorMode } = useColorMode();
 
    return (
-      <IconButton color="secondary" onClick={toggleColorMode} sx={{ pl: 1, pr: 1 }}>
+      <IconButton
+         aria-label="Toggle color mode"
+         color="secondary"
+         onClick={toggleColorMode}
+         sx={{ pl: 1, pr: 1 }}>
          {colorMode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
       </IconButton>
    );
