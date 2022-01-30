@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.1](https://github.com/matthieu-locussol/portfolio/compare/v1.11.0...v1.11.1) (2022-01-30)
+
+
+### Bug Fixes
+
+* added missing a11y on works links ([185d7e2](https://github.com/matthieu-locussol/portfolio/commit/185d7e29c6f67f239e2c4d24b1bd33adaafb099e))
+
 ## [1.11.0](https://github.com/matthieu-locussol/portfolio/compare/v1.9.2...v1.11.0) (2022-01-30)
 
 
