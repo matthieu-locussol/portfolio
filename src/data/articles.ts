@@ -1,4 +1,4 @@
-import brandingPicture from '../../public/articles/branding.jpg';
+import brandingPicture from '../../public/articles/branding.jpeg';
 import ebsPicture from '../../public/articles/ebs.jpeg';
 import gitlabPicture from '../../public/articles/gitlab.png';
 import nextssgPicture from '../../public/articles/nextssg.jpeg';
