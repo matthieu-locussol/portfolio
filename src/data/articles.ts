@@ -1,7 +1,6 @@
 import brandingPicture from '../../public/articles/branding.jpeg';
 import ebsPicture from '../../public/articles/ebs.jpeg';
 import gitlabPicture from '../../public/articles/gitlab.png';
-import nextssgPicture from '../../public/articles/nextssg.jpeg';
 
 export interface Article {
    title: string;
@@ -18,13 +17,6 @@ export const ARTICLES: Article[] = [
       date: 'Wednesday, 22 Mar 2023',
       picture: brandingPicture,
       link: 'https://galadrim.fr/blog/type-branding-and-flavoring-rendez-votre-code-typescript-plus-lisible-et-robuste',
-   },
-   {
-      title: 'Optimize your website using Next.js and SSG',
-      content: `Using Next.js, it is possible to upload sites whose pages have been statically generated very easily. To do this, you just have to develop your web page as a "template" and tell Next.js how to retrieve the data for each statically generated path.`,
-      date: 'Friday, 9 Apr 2021',
-      picture: nextssgPicture,
-      link: 'https://www.kanjisho.com/devblog/optimize-your-website-using-next.js-and-ssg',
    },
    {
       title: 'Comment déployer votre back-end sur AWS Elastic Beanstalk avec Github Actions ?',
