@@ -16,7 +16,8 @@ export const LinkIcon = ({ link, sx, ...rest }: LinkIconProps) => {
          href={link}
          sx={{
             pointerEvents: 'auto',
-         }}>
+         }}
+      >
          <OpenInNewIcon
             fontSize="large"
             color="secondary"

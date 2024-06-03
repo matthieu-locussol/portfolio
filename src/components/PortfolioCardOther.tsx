@@ -33,7 +33,8 @@ export const PortfolioCardOther = ({
             ':hover': {
                transform: 'translateY(-5px)',
             },
-         }}>
+         }}
+      >
          <Box sx={{ display: 'flex', width: '100%' }}>
             {type === 'web' && <WebIcon color="primary" fontSize="large" sx={{ mr: 'auto' }} />}
             {type === 'software' && (
@@ -49,7 +50,8 @@ export const PortfolioCardOther = ({
             variant="h6"
             color="secondary"
             fontWeight="600"
-            sx={{ mt: 2 }}>
+            sx={{ mt: 2 }}
+         >
             {title}
          </Typography>
          <Typography component="p" fontSize={15} lineHeight={1.7} color="secondary">

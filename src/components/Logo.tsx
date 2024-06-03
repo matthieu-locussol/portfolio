@@ -1,6 +1,5 @@
 import { Link, useTheme } from '@mui/material';
 import RouterLink from 'next/link';
-import React from 'react';
 
 interface LogoProps {
    size: number;
@@ -32,7 +31,8 @@ export const Logo = ({ size }: LogoProps) => {
                   height: '100%',
                   fill: 'none',
                },
-            }}>
+            }}
+         >
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                <g>
                   <g transform="translate(28.000000, 33.000000)">

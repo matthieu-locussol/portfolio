@@ -16,7 +16,8 @@ export const LinkedInIcon = ({ link, sx, ...rest }: LinkedInIconProps) => {
          href={link}
          sx={{
             pointerEvents: 'auto',
-         }}>
+         }}
+      >
          <MuiLinkedInIcon
             color="secondary"
             sx={{

@@ -16,12 +16,14 @@ const Custom404 = () => {
                alignItems: 'center',
                textAlign: 'center',
                minHeight: '80vh',
-            }}>
+            }}
+         >
             <Typography
                gutterBottom
                variant="h1"
                color="primary"
-               sx={{ fontFamily: 'Fira Code', fontSize: { xs: 160, lg: 300 }, mb: 2 }}>
+               sx={{ fontFamily: 'Fira Code', fontSize: { xs: 160, lg: 300 }, mb: 2 }}
+            >
                404
             </Typography>
             <Typography gutterBottom variant="h2">

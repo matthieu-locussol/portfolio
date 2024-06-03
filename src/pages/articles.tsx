@@ -29,7 +29,8 @@ const Articles = () => {
                mt: 2,
                pt: 2,
                backgroundColor: theme.palette.background.paper,
-            }}>
+            }}
+         >
             <Container
                maxWidth="lg"
                sx={{
@@ -38,13 +39,15 @@ const Articles = () => {
                   display: 'flex',
                   flexDirection: { xs: 'column', md: 'row' },
                   width: '100%',
-               }}>
+               }}
+            >
                <Box
                   sx={{
                      display: 'flex',
                      flexDirection: 'column',
                      p: { xs: 0, sm: 4, md: 0 },
-                  }}>
+                  }}
+               >
                   <Typography component="h2" gutterBottom variant="h4">
                      Technical
                   </Typography>
@@ -62,7 +65,8 @@ const Articles = () => {
                            ':last-child': {
                               mb: 4,
                            },
-                        }}>
+                        }}
+                     >
                         {articles.map((article) => (
                            <ArticleCard key={article.title} {...article} />
                         ))}

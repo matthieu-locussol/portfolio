@@ -27,13 +27,15 @@ export const CareerCard = ({ title, company, tags, active, entries = [] }: Caree
                active ? theme.palette.primary.main : theme.palette.text.primary
             }`,
             mb: 4,
-         }}>
+         }}
+      >
          <Typography variant="h6" component="h3" sx={{ fontWeight: 600 }}>
             {title}
             {company ? (
                <ExternalLink
                   label={`Visit ${company.name} website`}
-                  href={company.link}>{` @ ${company.name}`}</ExternalLink>
+                  href={company.link}
+               >{` @ ${company.name}`}</ExternalLink>
             ) : (
                ''
             )}

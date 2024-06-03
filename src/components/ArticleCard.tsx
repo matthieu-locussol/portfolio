@@ -24,7 +24,8 @@ export const ArticleCard = ({ title, content, date, picture, link }: ArticleCard
                      : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
             },
             backgroundColor: theme.palette.background.default,
-         }}>
+         }}
+      >
          <ExternalLink label="Read article content" href={link}>
             <Image src={picture} alt={title} layout="responsive" placeholder="blur" />
          </ExternalLink>
@@ -42,7 +43,8 @@ export const ArticleCard = ({ title, content, date, picture, link }: ArticleCard
                      color: theme.palette.text.primary,
                      textDecoration: 'none',
                      ':hover': { color: theme.palette.primary.main },
-                  }}>
+                  }}
+               >
                   {title}
                </ExternalLink>
             </Typography>

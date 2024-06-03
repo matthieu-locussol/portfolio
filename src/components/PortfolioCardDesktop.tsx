@@ -46,7 +46,8 @@ export const PortfolioCardDesktop = ({
                      cursor: 'pointer',
                   },
                },
-            }}>
+            }}
+         >
             <NextImage
                src={picture}
                alt={title}
@@ -67,12 +68,14 @@ export const PortfolioCardDesktop = ({
             [property]: -16,
             zIndex: 510,
             pointerEvents: 'none',
-         }}>
+         }}
+      >
          <Typography
             component="h2"
             variant="subtitle1"
             color="primary"
-            sx={{ [property]: 'auto', fontFamily: 'Fira Code' }}>
+            sx={{ [property]: 'auto', fontFamily: 'Fira Code' }}
+         >
             Featured project
          </Typography>
          <Typography
@@ -81,7 +84,8 @@ export const PortfolioCardDesktop = ({
             variant="h5"
             color="textPrimary"
             fontWeight="600"
-            sx={{ [property]: 'auto', mb: 3 }}>
+            sx={{ [property]: 'auto', mb: 3 }}
+         >
             {title}
          </Typography>
          <Card
@@ -94,13 +98,15 @@ export const PortfolioCardDesktop = ({
                      : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
                backgroundColor: theme.palette.background.default,
                pointerEvents: 'auto',
-            }}>
+            }}
+         >
             <Typography
                component="p"
                align={rtl ? 'right' : 'left'}
                fontSize={15}
                lineHeight={1.7}
-               color="secondary">
+               color="secondary"
+            >
                {description}
             </Typography>
          </Card>
@@ -108,7 +114,8 @@ export const PortfolioCardDesktop = ({
             component="p"
             variant="button"
             color="textSecondary"
-            sx={{ [property]: 'auto', mt: 2, maxWidth: '66%' }}>
+            sx={{ [property]: 'auto', mt: 2, maxWidth: '66%' }}
+         >
             {`▹ ${tags.join(' ▹ ')}`}
          </Typography>
          <Box
@@ -117,7 +124,8 @@ export const PortfolioCardDesktop = ({
                mt: 2,
                ...(rtl && { '& > *:not(:first-of-type)': { [property]: 2 } }),
                ...(!rtl && { '& > *:not(:last-child)': { [property]: 2 } }),
-            }}>
+            }}
+         >
             {github && <GitHubIcon link={github} />}
             <LinkIcon link={link} />
          </Box>

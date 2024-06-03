@@ -39,7 +39,8 @@ export const PortfolioCardMobile = ({
             },
             backgroundColor: theme.palette.background.default,
             ...sx,
-         }}>
+         }}
+      >
          <ExternalLink label="Visit project website" href={link}>
             <Image
                src={picture}
@@ -63,7 +64,8 @@ export const PortfolioCardMobile = ({
                      color: theme.palette.text.primary,
                      textDecoration: 'none',
                      ':hover': { color: theme.palette.primary.main },
-                  }}>
+                  }}
+               >
                   {title}
                </ExternalLink>
             </Typography>
@@ -80,7 +82,8 @@ export const PortfolioCardMobile = ({
                   '& > *:first-of-type': { ml: 'auto' },
                   '& > *:not(:first-of-type)': { ml: 2 },
                   mt: 2,
-               }}>
+               }}
+            >
                {github && <GitHubIcon link={github} />}
                <LinkIcon link={link} />
             </Box>

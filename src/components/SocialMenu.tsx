@@ -18,7 +18,8 @@ export const SocialMenu = () => {
             '& > *:not(:last-child)': {
                mb: 2,
             },
-         }}>
+         }}
+      >
          <GitHubIcon
             fontSize="large"
             link="https://github.com/matthieu-locussol"

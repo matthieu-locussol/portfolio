@@ -49,7 +49,8 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
             aria-label="Open menu"
             color="secondary"
             sx={{ pl: 1, pr: 1, ml: 2 }}
-            onClick={handleOpen}>
+            onClick={handleOpen}
+         >
             <MenuIcon />
          </IconButton>
          <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
@@ -64,7 +65,8 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
                      colorMode === 'dark'
                         ? 'rgb(2 12 27 / 70%) 0px 10px 30px -10px'
                         : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
-               }}>
+               }}
+            >
                <Toolbar>
                   <Box sx={{ alignItems: 'center', flexGrow: 1 }}>
                      <Logo size={42} />
@@ -75,7 +77,8 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
                      edge="end"
                      color="inherit"
                      onClick={handleClose}
-                     sx={{ pl: 1, pr: 1, ml: 2, mr: 0 }}>
+                     sx={{ pl: 1, pr: 1, ml: 2, mr: 0 }}
+                  >
                      <CloseIcon />
                   </IconButton>
                </Toolbar>
@@ -85,19 +88,22 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
                   mt: 8.5,
                   background: theme.palette.background.default,
                   height: '100%',
-               }}>
+               }}
+            >
                {items.map((item) => (
                   <React.Fragment key={item.name}>
                      <Link href={item.href} passHref key={item.name}>
                         <ListItem
                            disabled={item.href === router.pathname}
                            button
-                           sx={{ p: 2, opacity: '1 !important' }}>
+                           sx={{ p: 2, opacity: '1 !important' }}
+                        >
                            <ListItemText
                               primary={
                                  <Typography
                                     color={item.href === router.pathname ? 'primary' : 'default'}
-                                    sx={{ fontSize: 18 }}>
+                                    sx={{ fontSize: 18 }}
+                                 >
                                     {item.href === router.pathname && '▹ '}
                                     {item.name}
                                  </Typography>

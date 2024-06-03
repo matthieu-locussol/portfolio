@@ -11,7 +11,8 @@ export const ColorModeButton = () => {
          aria-label="Toggle color mode"
          color="secondary"
          onClick={toggleColorMode}
-         sx={{ pl: 1, pr: 1 }}>
+         sx={{ pl: 1, pr: 1 }}
+      >
          {colorMode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
       </IconButton>
    );

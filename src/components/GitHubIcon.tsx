@@ -16,7 +16,8 @@ export const GitHubIcon = ({ link, sx, ...rest }: GitHubIconProps) => {
          href={link}
          sx={{
             pointerEvents: 'auto',
-         }}>
+         }}
+      >
          <MuiGitHubIcon
             fontSize="large"
             color="secondary"

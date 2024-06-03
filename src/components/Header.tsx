@@ -1,6 +1,5 @@
 import { Box, useTheme } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
-import * as React from 'react';
 import { useColorMode } from '../contexts/ColorModeContext';
 import { HeaderDesktop } from './HeaderDesktop';
 import { HeaderMobile } from './HeaderMobile';
@@ -35,7 +34,8 @@ export const Header = () => {
                colorMode === 'dark'
                   ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
                   : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
-         }}>
+         }}
+      >
          <Box sx={{ pl: { xs: 2, sm: 3 }, pr: { xs: 2, sm: 3 } }}>
             <HeaderDesktop items={items} sx={{ display: { xs: 'none', md: 'flex' } }} />
             <HeaderMobile items={items} sx={{ display: { xs: 'flex', md: 'none' } }} />

@@ -20,13 +20,15 @@ const About = () => {
                   display: 'flex',
                   justifyContent: 'space-between',
                   flexDirection: { xs: 'column', md: 'row' },
-               }}>
+               }}
+            >
                <Box>
                   <Typography
                      component="p"
                      variant="subtitle1"
                      color="textSecondary"
-                     sx={{ maxWidth: 500, mt: 2 }}>
+                     sx={{ maxWidth: 500, mt: 2 }}
+                  >
                      Hello! I'm Matthieu, a graduated software engineer based in Toulouse (France)
                      who enjoys architecting and building applications. I develop both softwares and
                      websites using modern technologies to provide end-users with intuitive and
@@ -36,11 +38,13 @@ const About = () => {
                      component="p"
                      variant="subtitle1"
                      color="textSecondary"
-                     sx={{ maxWidth: 500, mt: 2 }}>
+                     sx={{ maxWidth: 500, mt: 2 }}
+                  >
                      Shortly after graduating from{' '}
                      <ExternalLink
                         label="ENSEEIHT website"
-                        href="http://www.enseeiht.fr/en/index.html">
+                        href="http://www.enseeiht.fr/en/index.html"
+                     >
                         ENSEEIHT
                      </ExternalLink>
                      , I joined the engineering team at{' '}
@@ -51,7 +55,8 @@ const About = () => {
                      work as a freelance consultant in innovation funding at{' '}
                      <ExternalLink
                         label="III Financements website"
-                        href="http://www.iii-financements.com/">
+                        href="http://www.iii-financements.com/"
+                     >
                         III Financements
                      </ExternalLink>
                      .
@@ -88,7 +93,8 @@ const About = () => {
                               transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
                            },
                         },
-                     }}>
+                     }}
+                  >
                      <Image
                         src={mePicture}
                         alt="Profile picture"
@@ -108,7 +114,8 @@ const About = () => {
                mt: 2,
                pt: 2,
                backgroundColor: theme.palette.background.paper,
-            }}>
+            }}
+         >
             <Container
                maxWidth="lg"
                sx={{
@@ -117,13 +124,15 @@ const About = () => {
                   display: 'flex',
                   flexDirection: { xs: 'column', md: 'row' },
                   width: '100%',
-               }}>
+               }}
+            >
                <Box
                   sx={{
                      display: 'flex',
                      flexDirection: 'column',
                      p: { xs: 0, sm: 4, md: 0 },
-                  }}>
+                  }}
+               >
                   <Typography gutterBottom variant="h4" component="h2">
                      Educations
                   </Typography>

@@ -12,7 +12,8 @@ export const ResumeButton = ({ lang }: ResumeButtonProps) => {
          sx={{ ml: 2 }}
          href={`/resume/Matthieu_LOCUSSOL_Resume_${lang}.pdf`}
          target="_blank"
-         rel="noreferrer">
+         rel="noreferrer"
+      >
          Resume ({lang})
       </Button>
    );

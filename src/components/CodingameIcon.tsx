@@ -16,7 +16,8 @@ export const CodingameIcon = ({ link, sx, ...rest }: CodingameIconProps) => {
          href={link}
          sx={{
             pointerEvents: 'auto',
-         }}>
+         }}
+      >
          <CodeIcon
             color="secondary"
             sx={{

@@ -11,7 +11,8 @@ const Home = () => {
                gutterBottom
                variant="subtitle1"
                color="primary"
-               sx={{ fontFamily: 'Fira Code', fontSize: 18, mb: 2 }}>
+               sx={{ fontFamily: 'Fira Code', fontSize: 18, mb: 2 }}
+            >
                Hi, my name is
             </Typography>
             <Typography gutterBottom variant="h2" sx={{ fontSize: 54 }}>
@@ -22,7 +23,8 @@ const Home = () => {
                gutterBottom
                variant="h2"
                color="textSecondary"
-               sx={{ fontSize: 54 }}>
+               sx={{ fontSize: 54 }}
+            >
                I am a software engineer.
             </Typography>
             <Typography
@@ -30,7 +32,8 @@ const Home = () => {
                gutterBottom
                variant="subtitle1"
                color="textSecondary"
-               sx={{ maxWidth: 500, lineHeight: '28px', mt: 4 }}>
+               sx={{ maxWidth: 500, lineHeight: '28px', mt: 4 }}
+            >
                I'm a software engineer based in the south of France, working as a full-time full
                remote worker at{' '}
                <ExternalLink label="Galadrim website" href="https://galadrim.fr/">
@@ -43,7 +46,8 @@ const Home = () => {
                size="large"
                variant="outlined"
                sx={{ mt: 6, p: '20px 28px', fontSize: 16 }}
-               href="mailto:dev.matthieu.locussol@gmail.com">
+               href="mailto:dev.matthieu.locussol@gmail.com"
+            >
                Get In Touch
             </Button>
          </Container>

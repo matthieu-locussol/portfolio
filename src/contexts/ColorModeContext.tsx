@@ -13,7 +13,7 @@ type ColorModeContextInterface = {
 
 export const ColorModeContext = React.createContext<ColorModeContextInterface>({
    colorMode: 'dark',
-   toggleColorMode: () => {},
+   toggleColorMode: () => ({}),
 });
 
 export const useColorMode = () => useContext(ColorModeContext);

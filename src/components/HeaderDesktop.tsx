@@ -26,7 +26,8 @@ export const HeaderDesktop = ({ items, ...rest }: HeaderDesktopProps) => {
                   href={item.href}
                   size="medium"
                   color="secondary"
-                  sx={{ ml: 2 }}>
+                  sx={{ ml: 2 }}
+               >
                   {item.href === router.pathname && '▹ '}
                   {item.name}
                </Button>

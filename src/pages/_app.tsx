@@ -1,7 +1,6 @@
 import { CssBaseline } from '@mui/material';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import React from 'react';
 import { ColorModeProvider } from '../contexts/ColorModeContext';
 import { DARK_BACKGROUND_DEFAULT } from '../theme/constants';
 
@@ -97,7 +96,8 @@ const CustomApp = (props: AppProps) => {
 
                            gtag('config', 'G-LJFJF8WHYB');
                            `,
-               }}></script>
+               }}
+            ></script>
          </Head>
          <CssBaseline />
          <Component {...pageProps} />

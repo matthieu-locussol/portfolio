@@ -40,7 +40,8 @@ const Portfolio = () => {
                pt: { xs: 0, md: 8 },
                pb: { xs: 8, md: 12 },
                backgroundColor: theme.palette.background.paper,
-            }}>
+            }}
+         >
             <Container
                maxWidth="lg"
                sx={{
@@ -50,14 +51,16 @@ const Portfolio = () => {
                   display: 'flex',
                   flexDirection: { xs: 'column', md: 'row' },
                   width: '100%',
-               }}>
+               }}
+            >
                <Box
                   sx={{
                      display: 'flex',
                      flexDirection: 'column',
                      p: { xs: 0, sm: 4, md: 0 },
                      '& > *:not(:first-of-type)': { mt: { xs: 4, md: 12 } },
-                  }}>
+                  }}
+               >
                   {FEATURED_PROJECTS.map((project, idx) => (
                      <React.Fragment key={project.title}>
                         <PortfolioCardDesktop
@@ -97,7 +100,8 @@ const Portfolio = () => {
                      ':last-child': {
                         mb: 4,
                      },
-                  }}>
+                  }}
+               >
                   {projects.map((project) => (
                      <PortfolioCardOther key={project.title} {...project} />
                   ))}

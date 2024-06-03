@@ -30,7 +30,8 @@ const Work = () => {
                mt: 2,
                pt: 2,
                backgroundColor: theme.palette.background.paper,
-            }}>
+            }}
+         >
             <Container
                maxWidth="lg"
                sx={{
@@ -39,13 +40,15 @@ const Work = () => {
                   display: 'flex',
                   flexDirection: { xs: 'column', md: 'row' },
                   width: '100%',
-               }}>
+               }}
+            >
                <Box
                   sx={{
                      display: 'flex',
                      flexDirection: 'column',
                      p: { xs: 0, sm: 4, md: 0 },
-                  }}>
+                  }}
+               >
                   <Typography component="h2" gutterBottom variant="h4">
                      Careers
                   </Typography>
@@ -111,7 +114,8 @@ const Work = () => {
                               {`▹ Worked with a R&D team of five researchers as a software engineer to improve `}
                               <ExternalLink
                                  label="OpenSAND website"
-                                 href="http://opensand.org/content/home.php">
+                                 href="http://opensand.org/content/home.php"
+                              >
                                  OpenSAND
                               </ExternalLink>
                               {`, a 10+ years old software promoted by the `}
@@ -150,13 +154,15 @@ const Work = () => {
                               {`▹ Architected a solution to use Xtext, Sirius and Acceleo on the web using C++, TypeScript, the `}
                               <ExternalLink
                                  label="Language Server Protocol webpage"
-                                 href="https://microsoft.github.io/language-server-protocol/">
+                                 href="https://microsoft.github.io/language-server-protocol/"
+                              >
                                  LSP
                               </ExternalLink>
                               {` and the `}
                               <ExternalLink
                                  label="Graphical Server Protocol webpage"
-                                 href="https://obeonetwork.github.io/GraphicalServerProtocol/">
+                                 href="https://obeonetwork.github.io/GraphicalServerProtocol/"
+                              >
                                  GSP
                               </ExternalLink>
                            </>,
@@ -182,13 +188,15 @@ const Work = () => {
                               {`▹ Collaborated with a `}
                               <ExternalLink
                                  label="IRIT Team webpage"
-                                 href="https://www.irit.fr/STORM/site/team/">
+                                 href="https://www.irit.fr/STORM/site/team/"
+                              >
                                  team
                               </ExternalLink>
                               {` of research engineers to enhance `}
                               <ExternalLink
                                  label="Radium-Engine GitHub repository"
-                                 href="https://github.com/STORM-IRIT/Radium-Engine">
+                                 href="https://github.com/STORM-IRIT/Radium-Engine"
+                              >
                                  Radium-Engine
                               </ExternalLink>
                               {`, a 3D rendering engine used by university teachers for their Master's courses`}
@@ -198,7 +206,8 @@ const Work = () => {
                               {`▹ Helped working on `}
                               <ExternalLink
                                  label="PBRT v3 repository"
-                                 href="https://github.com/mmp/pbrt-v3">
+                                 href="https://github.com/mmp/pbrt-v3"
+                              >
                                  PBRT
                               </ExternalLink>
                               {` integration within the engine`}

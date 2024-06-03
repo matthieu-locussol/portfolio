@@ -19,7 +19,8 @@ export const InternalLink = ({ children, href, label, ...rest }: InternalLinkPro
                   transition: 'opacity 0.3s',
                },
             }}
-            {...rest}>
+            {...rest}
+         >
             {children}
          </Link>
       </NextLink>

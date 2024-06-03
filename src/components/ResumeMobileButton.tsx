@@ -15,7 +15,8 @@ export const ResumeMobileButton = ({ lang }: ResumeMobileButtonProps) => {
                primary={
                   <Typography
                      color={theme.palette.primary.main}
-                     sx={{ fontFamily: 'Fira Code' }}>{`Resume (${lang})`}</Typography>
+                     sx={{ fontFamily: 'Fira Code' }}
+                  >{`Resume (${lang})`}</Typography>
                }
             />
          </ListItem>
