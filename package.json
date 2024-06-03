@@ -7,11 +7,9 @@
    "license": "MIT",
    "scripts": {
       "dev": "yarn run next dev",
-      "build": "yarn run next build",
+      "build": "yarn run check:lint && yarn run tests:ci && yarn run next build",
       "start": "yarn run next start",
       "export": "yarn run next export",
-      "postinstall": "yarn husky install",
-      "check:prettier": "prettier --list-different --config ./.prettierrc.json --ignore-path .prettierignore --write \"**/*.{js,jsx,ts,tsx,json}\"",
       "check:lint": "biome check *",
       "tests": "jest",
       "tests:ci": "jest --ci",

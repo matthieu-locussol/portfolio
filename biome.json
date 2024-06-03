@@ -7,7 +7,11 @@
       "indentWidth": 3,
       "lineEnding": "lf",
       "lineWidth": 100,
-      "attributePosition": "auto"
+      "attributePosition": "auto",
+      "ignore": ["**/sw.js", "**/workbox*.js"]
+   },
+   "files": {
+      "ignore": ["**/sw.js", "**/workbox*.js"]
    },
    "organizeImports": { "enabled": true },
    "linter": {
