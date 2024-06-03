@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/matthieu-locussol/portfolio/compare/v1.11.3...v1.12.0) (2024-06-03)
+
+
+### Features
+
+* added biome configuration ([c22591c](https://github.com/matthieu-locussol/portfolio/commit/c22591c1d61401224cfad2efc2a836d9355675ad))
+* added taktix project & various changes ([0f994de](https://github.com/matthieu-locussol/portfolio/commit/0f994debfc14b63f31439ca59c730efc6216c06c))
+* updated articles ([7d31300](https://github.com/matthieu-locussol/portfolio/commit/7d31300701a9de6461668fdea10fded31f80c1cc))
+
 ### [1.11.3](https://github.com/matthieu-locussol/portfolio/compare/v1.11.2...v1.11.3) (2022-01-30)
 
 
