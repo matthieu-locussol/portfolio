@@ -1,6 +1,6 @@
 import kanjishoPicture from '../../public/projects/kanjisho.png';
 import pokeminePicture from '../../public/projects/pokemine.png';
-import portfolioPicture from '../../public/projects/portfolio.png';
+import taktixPicture from '../../public/projects/taktix.png';
 import traycerPicture from '../../public/projects/traycer.png';
 
 export interface BaseProject {
@@ -29,21 +29,21 @@ export const FEATURED_PROJECTS: Project[] = [
       picture: kanjishoPicture,
    },
    {
+      title: 'Taktix MMO',
+      description:
+         'An open-source cross-platform MMORPG written in TypeScript. It implements a bunch of features such as real-time multiplayer, chat, inventory, fights, and more.',
+      tags: ['Phaser', 'Colyseus', 'Websockets', 'Tauri', 'Prisma'],
+      link: 'https://taktix.vercel.app/',
+      picture: taktixPicture,
+      github: 'https://github.com/matthieu-locussol/taktix-app',
+   },
+   {
       title: 'Pokémine',
       description:
          'Pokémine is a webtool allowing users to ease the trade messages generation for Pokémon bots. It uses data from PokéAPI, Smogon & others to provide presets and input validation.',
       tags: ['Typescript', 'Scraping', 'React.JS', 'MobX', 'ViteJS'],
       link: 'https://pokemine.vercel.app/',
       picture: pokeminePicture,
-   },
-   {
-      title: 'Portfolio',
-      description:
-         'My personal portfolio project is the website you are on! It uses TypeScript, MUI & Next.js and is available on GitHub.',
-      tags: ['Typescript', 'Next.js', 'Material-UI', 'Responsive'],
-      link: 'https://www.matthieu-locussol.com/',
-      picture: portfolioPicture,
-      github: 'https://github.com/matthieu-locussol/portfolio',
    },
    {
       title: 'Traycer',
@@ -58,6 +58,23 @@ export const FEATURED_PROJECTS: Project[] = [
 
 export const OTHER_PROJECTS: OtherProject[] = [
    {
+      title: 'Portfolio',
+      description:
+         'My personal portfolio project is the website you are on! It uses TypeScript, MUI & Next.js and is available on GitHub.',
+      tags: ['Typescript', 'Next.js', 'Material-UI', 'Responsive'],
+      link: 'https://www.matthieu-locussol.com/',
+      github: 'https://github.com/matthieu-locussol/portfolio',
+      type: 'web',
+   },
+   {
+      title: 'SaaSational',
+      description:
+         'A sensational SaaS boilerplate that allows you to jump straight into your product instead of reinventing the wheel!',
+      tags: ['Next.js', 'Shadcn/ui', 'Tailwindcss', 'Stripe', 'Mailgun'],
+      link: 'https://saasational.vercel.app/',
+      type: 'tool',
+   },
+   {
       title: 'MagicVault',
       description:
          'MagicVault is a modern and responsive search engine and cards collection manager for the Magic: The Gathering TCG. It uses Scryfall API as a third party to retrieve cards informations.',
@@ -71,7 +88,7 @@ export const OTHER_PROJECTS: OtherProject[] = [
       description:
          'Novelly is a free online writing platform accessible to everyone. Its purpose is to provide a pleasant environment and writing tools supported by a strong underlying architecture.',
       tags: ['Typescript', 'FaunaDB', 'AWS', 'Next.js', 'Material-UI'],
-      link: 'https://novelly.netlify.com/',
+      link: 'https://novelly.netlify.app/',
       github: 'https://github.com/matthieu-locussol/Novelly',
       type: 'web',
    },
@@ -80,7 +97,7 @@ export const OTHER_PROJECTS: OtherProject[] = [
       description:
          "NatashaDiaries is a blog made to help japanese students willing to study abroad by providing them advices based on Natasha's experiences.",
       tags: ['Vue.JS', 'Netlify CMS', 'Gridsome', 'SEO'],
-      link: 'https://natasha-diaries.netlify.com/',
+      link: 'https://natasha-diaries.netlify.app/',
       github: 'https://github.com/matthieu-locussol/NatashaDiaries',
       type: 'web',
    },
@@ -125,7 +142,7 @@ export const OTHER_PROJECTS: OtherProject[] = [
       description:
          'Cact is a cat fact coming with a random cute cat picture picker. It makes use of TheCatAPI and the cat-facts API with a modern React.JS project structure.',
       tags: ['React.JS', 'Typescript', 'REST API', 'Axios'],
-      link: 'https://cact.netlify.com/',
+      link: 'https://cact.netlify.app/',
       github: 'https://github.com/matthieu-locussol/cact',
       type: 'web',
    },

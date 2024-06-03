@@ -17,7 +17,7 @@ const Articles = () => {
                <Typography component="p" variant="subtitle1" color="textSecondary" sx={{ mt: 2 }}>
                   I love writing articles, whether it's for my work or just as a hobby, sharing
                   technical knowledge on a subject is always an enjoyable exercise. I have written
-                  articles in English and French, which you will find listed below.
+                  articles in English and French, you will find some of them listed below.
                </Typography>
             </Box>
          </Container>

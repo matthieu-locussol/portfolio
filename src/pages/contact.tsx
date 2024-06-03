@@ -36,7 +36,7 @@ const Contact = () => {
                sx={{ maxWidth: 600, lineHeight: '28px', mt: 4 }}
             >
                I am listening to all opportunities. Whether you have a question, a potential project
-               or just want to say hi, I will get back to you as soon as possible!
+               or just want to say hi, I will get back to you!
             </Typography>
             <Button
                size="large"
