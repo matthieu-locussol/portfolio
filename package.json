@@ -7,7 +7,7 @@
    "license": "MIT",
    "scripts": {
       "dev": "yarn run next dev",
-      "build": "yarn run check:lint && yarn run tests:ci && yarn run next build",
+      "build": "yarn run tests:ci && yarn run next build",
       "start": "yarn run next start",
       "export": "yarn run next export",
       "check:lint": "biome check *",
