@@ -57,6 +57,29 @@ export const FEATURED_PROJECTS: Project[] = [
 
 export const OTHER_PROJECTS: OtherProject[] = [
    {
+      title: 'Frenchdrill',
+      description: "Challenge yourself to learn French faster with this conjugation drill app. Study French grammar, using an interactive quizz system!",
+      tags: ['Next.js', 'HeroUI', 'MobX', 'AWS S3', 'GCP TTS'],
+      link: 'https://frenchdrill.vercel.app/',
+      type: 'web',
+   },
+   {
+      title: 'Pokéflou',
+      description: "Guess the pokémon given a decreasingly blurred image and compare your rank with other players!",
+      tags: ['Next.js', 'i18next', 'HeroUI', 'MobX', 'Sentry'],
+      link: 'https://pokeflou.vercel.app/',
+      github: 'https://github.com/matthieu-locussol/pokeflou',
+      type: 'web',
+   },
+   {
+      title: 'Kamikaze',
+      description: 'Small implementation of the kamikaze drinking game.',
+      tags: ['React.js', 'Typescript', 'Material-UI', 'MobX', 'Zod'],
+      link: 'https://kamikaze-game.netlify.app/',
+      github: 'https://github.com/matthieu-locussol/kamikaze',
+      type: 'web',
+   },
+   {
       title: 'Portfolio',
       description:
          'My personal portfolio project is the website you are on! It uses TypeScript, MUI & Next.js and is available on GitHub.',
@@ -72,6 +95,13 @@ export const OTHER_PROJECTS: OtherProject[] = [
       tags: ['Next.js', 'Shadcn/ui', 'Tailwindcss', 'Stripe', 'Mailgun'],
       link: 'https://saasational.vercel.app/',
       type: 'tool',
+   },
+   {
+      title: "Shohei's Portfolio",
+      description: "Shohei Okayama (岡山昇平) is a Japanese artist and illustrator. He is specialized in realistic painting and illustration.",
+      tags: ['Next.js', 'Vercel', 'Material-UI', 'Stripe', 'Mailjet'],
+      link: 'https://saasational.vercel.app/',
+      type: 'web',
    },
    {
       title: 'MagicVault',
