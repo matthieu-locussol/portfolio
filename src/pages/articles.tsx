@@ -48,9 +48,6 @@ const Articles = () => {
                      p: { xs: 0, sm: 4, md: 0 },
                   }}
                >
-                  <Typography component="h2" gutterBottom variant="h4">
-                     Technical
-                  </Typography>
                   {chunk(ARTICLES, 2).map((articles, idx) => (
                      <Box
                         key={idx}

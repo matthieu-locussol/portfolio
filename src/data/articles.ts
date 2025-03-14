@@ -1,6 +1,7 @@
-import brandingPicture from '../../public/articles/branding.jpeg';
-import ebsPicture from '../../public/articles/ebs.jpeg';
-import gitlabPicture from '../../public/articles/gitlab.png';
+import brandingPicture from '../../public/articles/branding.webp';
+import ebsPicture from '../../public/articles/ebs.webp';
+import gitlabPicture from '../../public/articles/gitlab.webp';
+import srsPicture from '../../public/articles/srs.webp';
 
 export interface Article {
    title: string;
@@ -11,6 +12,13 @@ export interface Article {
 }
 
 export const ARTICLES: Article[] = [
+   {
+      title: 'Spaced Repetition for Learning French: A Practical Guide',
+      content: `Explore the science behind SRS, its integration into Frencheers, and how combining it with immersion creates an effective learning strategy.`,
+      date: 'Monday, 3 Mar 2023',
+      picture: srsPicture,
+      link: 'https://www.frencheers.com/blog/spaced-repetition-for-learning-french',
+   },
    {
       title: 'Type Branding & Flavoring : Rendez votre code TypeScript plus lisible et plus robuste',
       content: `Le système de types de TypeScript est structurel et c'est l'un de ses principaux avantages. Cette caractéristique offre de nombreux outils puissants pour rendre les états non valides irreprésentables, permettant ainsi de détecter des bugs potentiels à la compilation et non au moment de l'exécution.`,
