@@ -15,7 +15,7 @@ export const ARTICLES: Article[] = [
    {
       title: 'Spaced Repetition for Learning French: A Practical Guide',
       content: `Explore the science behind SRS, its integration into Frencheers, and how combining it with immersion creates an effective learning strategy.`,
-      date: 'Monday, 3 Mar 2023',
+      date: 'Monday, 3 Mar 2025',
       picture: srsPicture,
       link: 'https://www.frencheers.com/blog/spaced-repetition-for-learning-french',
    },
