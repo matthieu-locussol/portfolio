@@ -18,7 +18,7 @@ export const WORKS: Work[] = [
          name: 'Galadrim',
          link: 'https://galadrim.fr/',
       },
-      tags: ['2020 -> Now', 'Galadrim', 'France'],
+      tags: ['April 2020 -> Now', 'Galadrim', 'France'],
       active: true,
       entries: [
          [
@@ -46,8 +46,8 @@ export const WORKS: Work[] = [
          name: 'III Financements',
          link: 'http://www.iii-financements.com/',
       },
-      tags: ['2019 -> Now', 'III Financements', 'France'],
-      active: true,
+      tags: ['May 2019 -> January 2025', 'III Financements', 'France'],
+      active: false,
       entries: [
          [
             'Description',
@@ -88,6 +88,88 @@ export const WORKS: Work[] = [
          [
             'Technologies',
             '▹ Software architecture ▹ Typescript ▹ React.JS ▹ Python ▹ C++ ▹ Catch2 ▹ Boost ▹ CMake ▹ DevOps',
+         ],
+      ],
+   },
+   {
+      title: 'Research Intern',
+      company: {
+         name: 'IRIT-ENSEEIHT',
+         link: 'https://www.irit.fr/',
+      },
+      tags: ['June 2018 -> July 2018', 'IRIT-ENSEEIHT', 'France'],
+      active: false,
+      entries: [
+         [
+            'Description',
+            <>
+               {`▹ Defined a state-of-the-art of existing tools used for modeling Domain-Specific Languages using the web as a support platform`}
+               <br />
+               {`▹ Architected a solution to use Xtext, Sirius and Acceleo on the web using C++, TypeScript, the `}
+               <ExternalLink
+                  label="Language Server Protocol webpage"
+                  href="https://microsoft.github.io/language-server-protocol/"
+               >
+                  LSP
+               </ExternalLink>
+               {` and the `}
+               <ExternalLink
+                  label="Graphical Server Protocol webpage"
+                  href="https://obeonetwork.github.io/GraphicalServerProtocol/"
+               >
+                  GSP
+               </ExternalLink>
+            </>,
+         ],
+         [
+            'Technologies',
+            '▹ Software architecture ▹ State of the art realization ▹ Web development',
+         ],
+      ],
+   },
+   {
+      title: 'Software Engineer Intern',
+      company: {
+         name: 'IRIT-UPS',
+         link: 'https://www.irit.fr/',
+      },
+      tags: ['April 2017 -> July 2017', 'IRIT-UPS', 'France'],
+      active: false,
+      entries: [
+         [
+            'Description',
+            <>
+               {`▹ Collaborated with a `}
+               <ExternalLink
+                  label="IRIT Team webpage"
+                  href="https://www.irit.fr/STORM/site/team/"
+               >
+                  team
+               </ExternalLink>
+               {` of research engineers to enhance `}
+               <ExternalLink
+                  label="Radium-Engine GitHub repository"
+                  href="https://github.com/STORM-IRIT/Radium-Engine"
+               >
+                  Radium-Engine
+               </ExternalLink>
+               {`, a 3D rendering engine used by university teachers for their Master's courses`}
+               <br />
+               {`▹ Architected a better OpenGL abstraction to the Radium-Engine and allowed easier code maintenance related to future improvements of the OpenGL specification`}
+               <br />
+               {`▹ Helped working on `}
+               <ExternalLink
+                  label="PBRT v3 repository"
+                  href="https://github.com/mmp/pbrt-v3"
+               >
+                  PBRT
+               </ExternalLink>
+               {` integration within the engine`}
+            </>,
+         ],
+         [
+            'Technologies',
+            '▹ Software architecture ▹ Image analysis ▹ C++ ▹ OpenGL ▹ GLSL ▹ GLbinding ▹ GLobjects ▹ Git',
          ],
       ],
    },

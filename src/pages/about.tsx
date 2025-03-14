@@ -51,15 +51,7 @@ const About = () => {
                      <ExternalLink label="Galadrim website" href="https://galadrim.fr/">
                         Galadrim
                      </ExternalLink>{' '}
-                     where I work on challenging and purposeful projects daily. Besides my work, I
-                     work as a freelance consultant in innovation funding at{' '}
-                     <ExternalLink
-                        label="III Financements website"
-                        href="http://www.iii-financements.com/"
-                     >
-                        III Financements
-                     </ExternalLink>
-                     .
+                     where I work on challenging and purposeful projects daily.
                   </Typography>
                </Box>
                <Box sx={{ position: 'relative', mt: { xs: 4, md: 0 } }}>
