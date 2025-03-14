@@ -1,7 +1,7 @@
-import kanjishoPicture from '../../public/projects/kanjisho.png';
-import pokeminePicture from '../../public/projects/pokemine.png';
-import taktixPicture from '../../public/projects/taktix.png';
-import traycerPicture from '../../public/projects/traycer.png';
+import frencheersPicture from '../../public/projects/frencheers.webp';
+import kanjishoPicture from '../../public/projects/kanjisho.webp';
+import pokeminePicture from '../../public/projects/pokemine.webp';
+import taktixPicture from '../../public/projects/taktix.webp';
 
 export interface BaseProject {
    title: string;
@@ -20,6 +20,14 @@ export interface Project extends BaseProject {
 }
 
 export const FEATURED_PROJECTS: Project[] = [
+   {
+      title: 'Frencheers',
+      description:
+         'Frencheers allows you to study French grammar, using an interactive input-based SRS system. With a lot of sample sentences, audio, verb conjugations and more.',
+      tags: ['Next.js', 'SEO', 'Better-auth', 'tRPC', 'HeroUI'],
+      link: 'https://www.frencheers.com/',
+      picture: frencheersPicture,
+   },
    {
       title: 'Kanjisho',
       description:
@@ -44,15 +52,6 @@ export const FEATURED_PROJECTS: Project[] = [
       tags: ['Typescript', 'Scraping', 'React.JS', 'MobX', 'ViteJS'],
       link: 'https://pokemine.vercel.app/',
       picture: pokeminePicture,
-   },
-   {
-      title: 'Traycer',
-      description:
-         'Traycer is a little Ray-Tracer written in C++. Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane.',
-      tags: ['C++', 'CMake', '3D Graphics', 'Cross-Platform'],
-      link: 'https://matthieu-locussol.github.io/Traycer/',
-      picture: traycerPicture,
-      github: 'https://github.com/matthieu-locussol/Traycer',
    },
 ];
 
@@ -86,7 +85,7 @@ export const OTHER_PROJECTS: OtherProject[] = [
    {
       title: 'Novelly',
       description:
-         'Novelly is a free online writing platform accessible to everyone. Its purpose is to provide a pleasant environment and writing tools supported by a strong underlying architecture.',
+         'Novelly is a free online writing platform accessible to everyone. Its purpose is to provide a pleasant environment and writing tools supported by a serverless underlying architecture.',
       tags: ['Typescript', 'FaunaDB', 'AWS', 'Next.js', 'Material-UI'],
       link: 'https://novelly.netlify.app/',
       github: 'https://github.com/matthieu-locussol/Novelly',
@@ -120,12 +119,12 @@ export const OTHER_PROJECTS: OtherProject[] = [
       type: 'tool',
    },
    {
-      title: 'MattBot',
+      title: 'MachuBot',
       description:
          'A multipurpose Discord bot written using Typescript. Handles advanced commands for osu! game, commands for retrieving gifs and ping command.',
       tags: ['TypeScript', 'Discord.JS', 'Osu! API', 'Chart.JS'],
-      link: 'https://matthieu-locussol.github.io/MattBot/',
-      github: 'https://github.com/matthieu-locussol/MattBot',
+      link: 'https://matthieu-locussol.github.io/MachuBot/',
+      github: 'https://github.com/matthieu-locussol/MachuBot',
       type: 'software',
    },
    {
@@ -145,6 +144,15 @@ export const OTHER_PROJECTS: OtherProject[] = [
       link: 'https://cact.netlify.app/',
       github: 'https://github.com/matthieu-locussol/cact',
       type: 'web',
+   },
+   {
+      title: 'Traycer',
+      description:
+         'Traycer is a little Ray-Tracer written in C++. Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane.',
+      tags: ['C++', 'CMake', '3D Graphics', 'Cross-Platform'],
+      link: 'https://matthieu-locussol.github.io/Traycer/',
+      github: 'https://github.com/matthieu-locussol/Traycer',
+      type: 'software',
    },
    {
       title: 'Hex',
