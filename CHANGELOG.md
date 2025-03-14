@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/matthieu-locussol/portfolio/compare/v1.12.0...v1.13.0) (2025-03-14)
+
+
+### Features
+
+* added frencheers to project list ([88c47c9](https://github.com/matthieu-locussol/portfolio/commit/88c47c9e4652d648acf2e1e72dde750045aabb8a))
+* added missing side-projects ([6d480a0](https://github.com/matthieu-locussol/portfolio/commit/6d480a06ce5a7dbb291b8bb8522c811b686aa058))
+* added the last written article ([60e15e3](https://github.com/matthieu-locussol/portfolio/commit/60e15e381bb309c3aa2d6185243e62f5fa5e066c))
+* updated works data ([8e5e763](https://github.com/matthieu-locussol/portfolio/commit/8e5e763d6e70c175ec9269bbe850e80bced20fa6))
+
 ## [1.12.0](https://github.com/matthieu-locussol/portfolio/compare/v1.11.3...v1.12.0) (2024-06-03)
 
 
