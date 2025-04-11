@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.1](https://github.com/matthieu-locussol/portfolio/compare/v1.13.0...v1.13.1) (2025-04-11)
+
+
+### Bug Fixes
+
+* better projects screenshots ([df9c011](https://github.com/matthieu-locussol/portfolio/commit/df9c0110e5844f7d6b41eef4f5bab436a1344cec))
+* updated article release date ([268e6d6](https://github.com/matthieu-locussol/portfolio/commit/268e6d64ce5903d43308b32ea8b75a9f3269fc25))
+
 ## [1.13.0](https://github.com/matthieu-locussol/portfolio/compare/v1.12.0...v1.13.0) (2025-03-14)
 
 
