@@ -29,7 +29,7 @@ const About = () => {
                      color="textSecondary"
                      sx={{ maxWidth: 500, mt: 2 }}
                   >
-                     Hello! I'm Matthieu, a graduated software engineer based in Tōkyō (Japan) who
+                     Hello! I'm Matthieu, a graduated software engineer based in Toulouse (France) who
                      enjoys architecting and building applications. I develop both softwares and
                      websites using modern technologies to provide end-users with intuitive and
                      efficient ready-to-use tools.
