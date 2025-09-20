@@ -1,6 +1,6 @@
 import { Box, Container, Link, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
-import mePicture from '../../public/me.jpg';
+import mePicture from '../../public/me.webp';
 import { CareerCard } from '../components/CareerCard';
 import { ExternalLink } from '../components/ExternalLink';
 import { Layout } from '../components/Layout';
