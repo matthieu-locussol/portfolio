@@ -34,7 +34,7 @@ const Home = () => {
                color="textSecondary"
                sx={{ maxWidth: 500, lineHeight: '28px', mt: 4 }}
             >
-               I'm a software engineer based in Tōkyō (Japan), working as a full-time full remote
+               I'm a software engineer based in Toulouse (France), working as a full-time full remote
                worker at{' '}
                <ExternalLink label="Galadrim website" href="https://galadrim.fr/">
                   Galadrim
