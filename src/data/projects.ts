@@ -21,20 +21,20 @@ export interface Project extends BaseProject {
 
 export const FEATURED_PROJECTS: Project[] = [
    {
-      title: 'Frencheers',
-      description:
-         'Frencheers allows you to study French grammar, using an interactive input-based SRS system. With a lot of sample sentences, audio, verb conjugations and more.',
-      tags: ['Next.js', 'SEO', 'Better-auth', 'tRPC', 'HeroUI'],
-      link: 'https://www.frencheers.com/',
-      picture: frencheersPicture,
-   },
-   {
       title: 'Kanjisho',
       description:
          'Kanjisho is a modern Japanese dictionary one can use to find informations on kanjis, words, English translations, kanji strokes and more. It uses third-party sources to provide these data.',
       tags: ['Typescript', 'AWS', 'Next.js', 'SSG', 'Vercel'],
       link: 'https://www.kanjisho.com/',
       picture: kanjishoPicture,
+   },
+   {
+      title: 'Frencheers',
+      description:
+         'Frencheers allows you to study French grammar, using an interactive input-based SRS system. With a lot of sample sentences, audio, verb conjugations and more.',
+      tags: ['Next.js', 'SEO', 'Better-auth', 'tRPC', 'HeroUI'],
+      link: 'https://www.frencheers.com/',
+      picture: frencheersPicture,
    },
    {
       title: 'Taktix MMO',
