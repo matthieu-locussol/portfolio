@@ -113,15 +113,6 @@ export const OTHER_PROJECTS: OtherProject[] = [
       type: 'web',
    },
    {
-      title: 'Novelly',
-      description:
-         'Novelly is a free online writing platform accessible to everyone. Its purpose is to provide a pleasant environment and writing tools supported by a serverless underlying architecture.',
-      tags: ['Typescript', 'FaunaDB', 'AWS', 'Next.js', 'Material-UI'],
-      link: 'https://novelly.netlify.app/',
-      github: 'https://github.com/matthieu-locussol/Novelly',
-      type: 'web',
-   },
-   {
       title: 'NatashaDiaries',
       description:
          "NatashaDiaries is a blog made to help japanese students willing to study abroad by providing them advices based on Natasha's experiences.",
@@ -140,15 +131,6 @@ export const OTHER_PROJECTS: OtherProject[] = [
       type: 'software',
    },
    {
-      title: 'VSChill',
-      description:
-         'VSChill is a Visual Studio Code theme based on Nord, specifically edited to fit my preferences regarding Javascript / Typescript programming.',
-      tags: ['VSCE', 'VS Code', 'JavaScript'],
-      link: 'https://marketplace.visualstudio.com/items?itemName=matthieu-locussol.vschill',
-      github: 'https://github.com/matthieu-locussol/VSChill',
-      type: 'tool',
-   },
-   {
       title: 'MachuBot',
       description:
          'A multipurpose Discord bot written using Typescript. Handles advanced commands for osu! game, commands for retrieving gifs and ping command.',
@@ -164,15 +146,6 @@ export const OTHER_PROJECTS: OtherProject[] = [
       tags: ['Jboss', 'Java EE', 'Database', 'JSP', 'API'],
       link: 'https://matthieu-locussol.github.io/TVManager/',
       github: 'https://github.com/matthieu-locussol/TVManager',
-      type: 'web',
-   },
-   {
-      title: 'Cact',
-      description:
-         'Cact is a cat fact coming with a random cute cat picture picker. It makes use of TheCatAPI and the cat-facts API with a modern React.JS project structure.',
-      tags: ['React.JS', 'Typescript', 'REST API', 'Axios'],
-      link: 'https://cact.netlify.app/',
-      github: 'https://github.com/matthieu-locussol/cact',
       type: 'web',
    },
    {
