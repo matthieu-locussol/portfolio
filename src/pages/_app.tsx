@@ -43,7 +43,7 @@ const CustomApp = (props: AppProps) => {
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://www.matthieu-locussol.com" />
             <meta property="og:site_name" content="Matthieu Locussol | Software Engineer" />
-            <meta property="og:image" content={`https://www.matthieu-locussol.com/og.png`} />
+            <meta property="og:image" content={`https://www.matthieu-locussol.com/og.webp`} />
             <meta property="og:image:width" content="1439" />
             <meta property="og:image:height" content="763" />
             <meta property="og:image:type" content="image/png" />
@@ -53,7 +53,7 @@ const CustomApp = (props: AppProps) => {
                itemProp="description"
                content="Matthieu Locussol is a software engineer currently working in freelance who enjoys architecting & building applications."
             />
-            <meta itemProp="image" content={`https://www.matthieu-locussol.com/og.png`} />
+            <meta itemProp="image" content={`https://www.matthieu-locussol.com/og.webp`} />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:url" content="https://www.matthieu-locussol.com" />
             <meta name="twitter:title" content="Matthieu Locussol | Software Engineer" />
@@ -61,7 +61,7 @@ const CustomApp = (props: AppProps) => {
                name="twitter:description"
                content="Matthieu Locussol is a software engineer currently working in freelance who enjoys architecting & building applications."
             />
-            <meta name="twitter:image" content={`https://www.matthieu-locussol.com/og.png`} />
+            <meta name="twitter:image" content={`https://www.matthieu-locussol.com/og.webp`} />
             <meta name="twitter:image:alt" content="Matthieu Locussol | Software Engineer" />
 
             <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
