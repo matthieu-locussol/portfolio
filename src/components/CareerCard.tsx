@@ -110,9 +110,10 @@ export const CareerCard = ({
                                  width: dotSize,
                                  height: dotSize,
                                  borderRadius: '50%',
-                                 backgroundColor: isCurrent
-                                    ? theme.palette.primary.main
-                                    : theme.palette.text.secondary,
+                                 backgroundColor:
+                                    isCurrent && active
+                                       ? theme.palette.primary.main
+                                       : theme.palette.text.secondary,
                               }}
                            />
                         </Box>

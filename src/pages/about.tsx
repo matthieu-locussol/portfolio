@@ -29,10 +29,19 @@ const About = () => {
                      color="textSecondary"
                      sx={{ maxWidth: 500, mt: 2 }}
                   >
-                     Hello! I'm Matthieu, a graduated software engineer based in Toulouse (France) who
-                     enjoys architecting and building applications. I develop both softwares and
-                     websites using modern technologies to provide end-users with intuitive and
-                     efficient ready-to-use tools.
+                     Hello! I'm Matthieu, I hold a Master's degree in Computer Science from{' '}
+                     <ExternalLink
+                        label="ENSEEIHT website"
+                        href="http://www.enseeiht.fr/en/index.html"
+                     >
+                        ENSEEIHT
+                     </ExternalLink>{' '}
+                     and currently work fully remote at{' '}
+                     <ExternalLink label="Iziwork website" href="https://www.iziwork.com/">
+                        Iziwork
+                     </ExternalLink>
+                     , France. Day-to-day, I enjoy architecting solid web applications and writing
+                     clean, scalable code.
                   </Typography>
                   <Typography
                      component="p"
@@ -40,18 +49,17 @@ const About = () => {
                      color="textSecondary"
                      sx={{ maxWidth: 500, mt: 2 }}
                   >
-                     Shortly after graduating from{' '}
-                     <ExternalLink
-                        label="ENSEEIHT website"
-                        href="http://www.enseeiht.fr/en/index.html"
-                     >
-                        ENSEEIHT
-                     </ExternalLink>
-                     , I joined the engineering team at{' '}
-                     <ExternalLink label="Galadrim website" href="https://galadrim.fr/">
-                        Galadrim
-                     </ExternalLink>{' '}
-                     where I work on challenging and purposeful projects daily.
+                     I really enjoy collaborating within international teams, and I actively look to
+                     keep that multicultural dynamic in my work.
+                  </Typography>
+                  <Typography
+                     component="p"
+                     variant="subtitle1"
+                     color="textSecondary"
+                     sx={{ maxWidth: 500, mt: 2 }}
+                  >
+                     This reflects my personal life too: my family ties to Japan mean I naturally
+                     navigate in a cross-cultural environment.
                   </Typography>
                </Box>
                <Box sx={{ position: 'relative', mt: { xs: 4, md: 0 } }}>

@@ -18,11 +18,44 @@ export const WORKS: Work[] = [
    {
       roles: [
          {
-            title: 'Full-Stack Developer',
+            title: 'Senior Fullstack Developer',
+            since: 'May 2026',
+         },
+      ],
+      company: {
+         name: 'Iziwork',
+         link: 'https://www.iziwork.com/',
+      },
+      tags: ['May 2026 -> Present', 'Iziwork', 'France'],
+      active: true,
+      entries: [
+         [
+            'Description',
+            <>
+               {
+                  '▹ Building high-quality platform to simplify temporary work in France, with a focus on the web application'
+               }
+               <br />
+               {'▹ Participate in architecture decisions and code reviews'}
+               <br />
+               {`▹ Communicate and sync with the team in an international environment`}
+            </>,
+         ],
+         [
+            'Technologies',
+            '▹ Typescript ▹ React.js ▹ Next.js ▹ NestJS ▹ MongoDB ▹ Mongoose ▹ Kafka ▹ RabbitMQ',
+         ],
+         ['Methodologies', '▹ Agile ▹ Test-Driven Development ▹ SOLID Principles ▹ Clean Code'],
+      ],
+   },
+   {
+      roles: [
+         {
+            title: 'Fullstack Developer',
             since: 'April 2020',
          },
          {
-            title: 'Senior Full-Stack Developer',
+            title: 'Senior Fullstack Developer',
             since: 'February 1st, 2025',
          },
       ],
@@ -30,9 +63,38 @@ export const WORKS: Work[] = [
          name: 'Galadrim',
          link: 'https://galadrim.fr/',
       },
-      tags: ['April 2020 -> Now', 'Galadrim', 'France'],
-      active: true,
+      tags: ['April 2020 -> May 2026', 'Galadrim', 'France'],
+      active: false,
       entries: [
+         [
+            'Missions',
+            <>
+               {`▹ Frontend engineer @ `}
+               <ExternalLink label="Atmen homepage" href="https://www.atmen.co/">
+                  Atmen
+               </ExternalLink>
+               <br />
+               {`▹ Fullstack developer @ `}
+               <ExternalLink label="SGDF homepage" href="https://sgdf.fr/">
+                  Scouts et Guides de France
+               </ExternalLink>
+               <br />
+               {`▹ Fullstack developer @ `}
+               <ExternalLink label="Directskills homepage" href="https://www.directskills.com/">
+                  Directskills
+               </ExternalLink>
+               <br />
+               {`▹ Lead backend developer @ `}
+               <ExternalLink label="Typology homepage" href="https://www.typology.com/">
+                  Typology
+               </ExternalLink>
+               <br />
+               {`▹ Frontend developer @ `}
+               <ExternalLink label="Posos homepage" href="https://www.posos.co/">
+                  Posos
+               </ExternalLink>
+            </>,
+         ],
          [
             'Description',
             <>
@@ -43,11 +105,13 @@ export const WORKS: Work[] = [
                {`▹ Communicate with multi-disciplinary teams of engineers and clients on a daily basis`}
                <br />
                {`▹ Mentoring newcomers and writing technical articles`}
+               <br />
+               {`▹ Communicating and progressing in an international environment`}
             </>,
          ],
          [
             'Technologies',
-            '▹ Typescript ▹ React.js ▹ React Native ▹ Next.js ▹ NestJS ▹ MobX ▹ Redux ▹ AWS ▹ GCP ▹ OVH ▹ TailwindCSS ▹ Material-UI ▹ Prisma ▹ TypeORM ▹ MySQL ▹ PostgreSQL ▹ GraphQL ▹ Relay ▹ GitLab CI/CD ▹ GitHub Actions',
+            '▹ Typescript ▹ React.js ▹ Next.js ▹ NestJS ▹ MobX ▹ Redux ▹ AWS ▹ GCP ▹ OVH ▹ TailwindCSS ▹ Material-UI ▹ Prisma ▹ TypeORM ▹ MySQL ▹ PostgreSQL ▹ GraphQL ▹ Relay ▹ GitLab CI/CD ▹ GitHub Actions',
          ],
          ['Methodologies', '▹ Agile ▹ Test-Driven Development'],
       ],

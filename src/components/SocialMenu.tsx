@@ -1,5 +1,4 @@
 import { Box, Divider, useTheme } from '@mui/material';
-import { CodingameIcon } from './CodingameIcon';
 import { GitHubIcon } from './GitHubIcon';
 import { LinkedInIcon } from './LinkedInIcon';
 
@@ -33,16 +32,6 @@ export const SocialMenu = () => {
          <LinkedInIcon
             fontSize="large"
             link="https://www.linkedin.com/in/matthieu-locussol"
-            sx={{
-               ':hover': {
-                  transform: 'translateY(-5px)',
-                  color: 'primary.main',
-               },
-            }}
-         />
-         <CodingameIcon
-            fontSize="large"
-            link="https://www.codingame.com/profile/b4e21e2f40f6232bcedf4fc58b5f37729870931"
             sx={{
                ':hover': {
                   transform: 'translateY(-5px)',

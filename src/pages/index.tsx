@@ -25,7 +25,7 @@ const Home = () => {
                color="textSecondary"
                sx={{ fontSize: 54 }}
             >
-               I am a software engineer.
+               I am a fullstack developer.
             </Typography>
             <Typography
                component="p"
@@ -34,10 +34,9 @@ const Home = () => {
                color="textSecondary"
                sx={{ maxWidth: 500, lineHeight: '28px', mt: 4 }}
             >
-               I'm a software engineer based in Toulouse (France), working as a full-time full remote
-               worker at{' '}
-               <ExternalLink label="Galadrim website" href="https://galadrim.fr/">
-                  Galadrim
+               I'm a fullstack developer working as a full-time full remote worker at{' '}
+               <ExternalLink label="Iziwork website" href="https://www.iziwork.com/">
+                  Iziwork
                </ExternalLink>
                . I love architecting & building high-quality softwares and intuitive web
                applications.
