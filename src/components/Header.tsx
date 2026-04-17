@@ -31,12 +31,12 @@ export const Header = () => {
             borderTop: `4px solid ${theme.palette.primary.main}`,
             backgroundColor:
                colorMode === 'dark'
-                  ? theme.palette.background.default
+                  ? 'rgba(10, 25, 47, 0.85)'
                   : 'rgba(247, 244, 239, 0.85)',
-            backdropFilter: colorMode === 'light' ? 'blur(12px)' : undefined,
+            backdropFilter: 'blur(12px)',
             boxShadow:
                colorMode === 'dark'
-                  ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
+                  ? 'rgb(2 12 27 / 60%) 0px 4px 16px, rgb(2 12 27 / 40%) 0px 1px 4px'
                   : 'rgba(46, 48, 71, 0.08) 0px 4px 16px, rgba(46, 48, 71, 0.04) 0px 1px 4px',
          }}
       >

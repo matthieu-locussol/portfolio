@@ -35,7 +35,7 @@ export const PortfolioCardDesktop = ({
             sx={{
                '& img': {
                   opacity: 0.6,
-                  borderRadius: 1,
+                  borderRadius: '10px',
                   transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
                   border:
                      colorMode === 'light'
@@ -94,7 +94,7 @@ export const PortfolioCardDesktop = ({
                p: 3,
                boxShadow:
                   colorMode === 'dark'
-                     ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
+                     ? 'rgb(2 12 27 / 60%) 0px 8px 30px -4px, rgb(2 12 27 / 40%) 0px 2px 8px'
                      : 'rgba(46, 48, 71, 0.10) 0px 8px 30px -4px, rgba(46, 48, 71, 0.05) 0px 2px 8px',
                backgroundColor: theme.palette.background.default,
                pointerEvents: 'auto',
