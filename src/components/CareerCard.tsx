@@ -47,7 +47,9 @@ export const CareerCard = ({
             p: 2,
             mb: 4,
             backgroundColor: theme.palette.background.default,
-            borderLeft: `4px solid ${active ? theme.palette.primary.main : theme.palette.text.primary}`,
+            borderLeft: `4px solid ${
+               active ? theme.palette.primary.main : theme.palette.text.primary
+            }`,
          }}
       >
          <Box sx={{ mt: hasSingleRole ? 1 : 0 }}>
@@ -104,7 +106,7 @@ export const CareerCard = ({
                               sx={{
                                  position: 'absolute',
                                  left: (14 - dotSize) / 2,
-                                 top: 5,
+                                 top: isCurrent ? 7 : 5,
                                  width: dotSize,
                                  height: dotSize,
                                  borderRadius: '50%',
