@@ -11,6 +11,7 @@ interface Work {
    };
    tags: string[];
    active: boolean;
+   internship?: boolean;
    entries: [string, React.ReactNode][];
 }
 
@@ -157,6 +158,7 @@ export const WORKS: Work[] = [
       },
       tags: ['March 2019 -> September 2019', 'Viveris', 'France'],
       active: false,
+      internship: true,
       entries: [
          [
             'Description',
@@ -197,6 +199,7 @@ export const WORKS: Work[] = [
       },
       tags: ['June 2018 -> July 2018', 'IRIT-ENSEEIHT', 'France'],
       active: false,
+      internship: true,
       entries: [
          [
             'Description',
@@ -238,6 +241,7 @@ export const WORKS: Work[] = [
       },
       tags: ['April 2017 -> July 2017', 'IRIT-UPS', 'France'],
       active: false,
+      internship: true,
       entries: [
          [
             'Description',

@@ -59,6 +59,7 @@ const Work = () => {
                         company={work.company}
                         tags={work.tags}
                         active={work.active}
+                        internship={work.internship}
                         entries={work.entries}
                      />
                   ))}

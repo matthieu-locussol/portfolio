@@ -17,6 +17,7 @@ interface CareerCardProps {
    };
    tags: string[];
    active: boolean;
+   internship?: boolean;
    entries?: [string, React.ReactNode][];
 }
 
@@ -26,6 +27,7 @@ export const CareerCard = ({
    company,
    tags,
    active,
+   internship = false,
    entries = [],
 }: CareerCardProps) => {
    const theme = useTheme();
@@ -40,16 +42,23 @@ export const CareerCard = ({
       </ExternalLink>
    ) : null;
 
+   const borderColor = active
+      ? theme.palette.primary.main
+      : internship
+        ? theme.palette.text.disabled
+        : theme.palette.text.primary;
+
    return (
       <Card
          variant="outlined"
          sx={{
             p: 2,
             mb: 4,
-            backgroundColor: theme.palette.background.default,
-            borderLeft: `4px solid ${
-               active ? theme.palette.primary.main : theme.palette.text.primary
-            }`,
+            backgroundColor: internship
+               ? 'oklch(22.8% 0.013 107.4)'
+               : theme.palette.background.default,
+            borderLeft: `4px solid ${borderColor}`,
+            opacity: internship ? 0.85 : 1,
          }}
       >
          <Box sx={{ mt: hasSingleRole ? 1 : 0 }}>
