@@ -29,11 +29,15 @@ export const Header = () => {
             pt: 0.5,
             pb: 0.5,
             borderTop: `4px solid ${theme.palette.primary.main}`,
-            backgroundColor: theme.palette.background.default,
+            backgroundColor:
+               colorMode === 'dark'
+                  ? theme.palette.background.default
+                  : 'rgba(247, 244, 239, 0.85)',
+            backdropFilter: colorMode === 'light' ? 'blur(12px)' : undefined,
             boxShadow:
                colorMode === 'dark'
                   ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
-                  : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
+                  : 'rgba(46, 48, 71, 0.08) 0px 4px 16px, rgba(46, 48, 71, 0.04) 0px 1px 4px',
          }}
       >
          <Box sx={{ pl: { xs: 2, sm: 3 }, pr: { xs: 2, sm: 3 } }}>

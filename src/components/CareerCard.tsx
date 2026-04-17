@@ -55,7 +55,7 @@ export const CareerCard = ({
             p: 2,
             mb: 4,
             backgroundColor: internship
-               ? 'oklch(22.8% 0.013 107.4)'
+               ? (theme.palette.mode === 'dark' ? 'oklch(22.8% 0.013 107.4)' : 'rgba(46, 48, 71, 0.03)')
                : theme.palette.background.default,
             borderLeft: `4px solid ${borderColor}`,
             opacity: internship ? 0.85 : 1,

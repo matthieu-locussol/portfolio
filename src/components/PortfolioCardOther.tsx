@@ -24,14 +24,18 @@ export const PortfolioCardOther = ({
          sx={{
             p: 4,
             mt: 1,
-            borderRadius: 0.5,
+            borderRadius: 2.5,
             boxShadow:
                colorMode === 'dark'
                   ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
-                  : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
+                  : 'rgba(46, 48, 71, 0.06) 0px 1px 3px, rgba(46, 48, 71, 0.04) 0px 1px 2px',
             transition: 'all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)',
             ':hover': {
                transform: 'translateY(-5px)',
+               boxShadow:
+                  colorMode === 'dark'
+                     ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
+                     : 'rgba(46, 48, 71, 0.10) 0px 8px 30px -4px, rgba(46, 48, 71, 0.05) 0px 2px 8px',
             },
          }}
       >

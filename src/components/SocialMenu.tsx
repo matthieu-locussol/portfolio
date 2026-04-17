@@ -41,7 +41,7 @@ export const SocialMenu = () => {
          />
          <Divider
             orientation="vertical"
-            sx={{ border: `1px solid ${theme.palette.text.primary}`, height: 80, width: '1px' }}
+            sx={{ border: `1px solid ${theme.palette.text.secondary}`, height: 80, width: '1px' }}
          />
       </Box>
    );

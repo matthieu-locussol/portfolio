@@ -39,7 +39,7 @@ export const PortfolioCardDesktop = ({
                   transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
                   border:
                      colorMode === 'light'
-                        ? `1px solid ${theme.palette.text.primary} !important`
+                        ? `1px solid rgba(46, 48, 71, 0.15) !important`
                         : `1px solid rgba(255, 255, 255, 0.12) !important`,
                   ':hover': {
                      opacity: 1,
@@ -95,7 +95,7 @@ export const PortfolioCardDesktop = ({
                boxShadow:
                   colorMode === 'dark'
                      ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
-                     : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
+                     : 'rgba(46, 48, 71, 0.10) 0px 8px 30px -4px, rgba(46, 48, 71, 0.05) 0px 2px 8px',
                backgroundColor: theme.palette.background.default,
                pointerEvents: 'auto',
             }}

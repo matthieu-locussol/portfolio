@@ -24,7 +24,7 @@ const Work = () => {
          </Container>
          <Box
             sx={{
-               borderTop: `1px solid ${theme.palette.text.secondary}`,
+               borderTop: `1px solid ${theme.palette.divider}`,
                ml: -4,
                mr: -4,
                mt: 2,

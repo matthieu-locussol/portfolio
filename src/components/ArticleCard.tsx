@@ -21,7 +21,8 @@ export const ArticleCard = ({ title, content, date, picture, link }: ArticleCard
                boxShadow:
                   colorMode === 'dark'
                      ? 'rgb(2 12 27 / 100%) 0px 10px 30px -10px'
-                     : 'rgb(2 12 27 / 70%) 0px 2px 9px -3px',
+                     : 'rgba(46, 48, 71, 0.10) 0px 8px 30px -4px, rgba(46, 48, 71, 0.05) 0px 2px 8px',
+               transform: colorMode === 'light' ? 'translateY(-2px)' : undefined,
             },
             backgroundColor: theme.palette.background.default,
          }}
