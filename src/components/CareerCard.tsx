@@ -3,11 +3,13 @@ import { CareerChip } from './CareerChip';
 import { CareerEntry } from './CareerEntry';
 import { ExternalLink } from './ExternalLink';
 
+type Role = {
+   title: string;
+   since: string;
+};
+
 interface CareerCardProps {
-   roles?: {
-      title: string;
-      since: string;
-   }[];
+   roles?: Role[];
    title?: string;
    company?: {
       name: string;
@@ -27,31 +29,25 @@ export const CareerCard = ({
    entries = [],
 }: CareerCardProps) => {
    const theme = useTheme();
-   const normalizedRoles =
-      roles.length > 0
-         ? roles
-         : title
-           ? [
-                {
-                   title,
-                   since: '',
-                },
-             ]
-           : [];
-   const timelineRoles = [...normalizedRoles].reverse();
+   const fallbackRole = title ? [{ title, since: '' }] : [];
+   const timelineRoles = [...(roles.length > 0 ? roles : fallbackRole)].reverse();
    const currentRole = timelineRoles[0];
    const hasSingleRole = timelineRoles.length <= 1;
+
+   const companyLink = company ? (
+      <ExternalLink label={`Visit ${company.name} website`} href={company.link}>
+         {` @ ${company.name}`}
+      </ExternalLink>
+   ) : null;
 
    return (
       <Card
          variant="outlined"
          sx={{
             p: 2,
-            backgroundColor: theme.palette.background.default,
-            borderLeft: `4px solid ${
-               active ? theme.palette.primary.main : theme.palette.text.primary
-            }`,
             mb: 4,
+            backgroundColor: theme.palette.background.default,
+            borderLeft: `4px solid ${active ? theme.palette.primary.main : theme.palette.text.primary}`,
          }}
       >
          <Box sx={{ mt: hasSingleRole ? 1 : 0 }}>
@@ -62,17 +58,13 @@ export const CareerCard = ({
                   sx={{ fontWeight: 600, lineHeight: 0.5, mb: 2 }}
                >
                   {currentRole?.title ?? ''}
-                  {company ? (
-                     <ExternalLink
-                        label={`Visit ${company.name} website`}
-                        href={company.link}
-                     >{` @ ${company.name}`}</ExternalLink>
-                  ) : null}
+                  {companyLink}
                </Typography>
             ) : (
                timelineRoles.map((role, index) => {
                   const isCurrent = index === 0;
                   const isLast = index === timelineRoles.length - 1;
+                  const dotSize = isCurrent ? 10 : 8;
 
                   return (
                      <Box
@@ -85,7 +77,7 @@ export const CareerCard = ({
                         }}
                      >
                         <Box sx={{ width: 14, position: 'relative', flexShrink: 0 }}>
-                           {!isLast ? (
+                           {!isLast && (
                               <Box
                                  component="svg"
                                  viewBox="0 0 14 100"
@@ -107,14 +99,14 @@ export const CareerCard = ({
                                     strokeWidth="2"
                                  />
                               </Box>
-                           ) : null}
+                           )}
                            <Box
                               sx={{
                                  position: 'absolute',
-                                 left: isCurrent ? 2 : 3,
-                                 top: isCurrent ? 5 : 5,
-                                 width: isCurrent ? 10 : 8,
-                                 height: isCurrent ? 10 : 8,
+                                 left: (14 - dotSize) / 2,
+                                 top: 5,
+                                 width: dotSize,
+                                 height: dotSize,
                                  borderRadius: '50%',
                                  backgroundColor: isCurrent
                                     ? theme.palette.primary.main
@@ -129,14 +121,9 @@ export const CareerCard = ({
                               sx={{ fontWeight: isCurrent ? 600 : 500, lineHeight: 1.2 }}
                            >
                               {role.title}
-                              {isCurrent && company ? (
-                                 <ExternalLink
-                                    label={`Visit ${company.name} website`}
-                                    href={company.link}
-                                 >{` @ ${company.name}`}</ExternalLink>
-                              ) : null}
+                              {isCurrent && companyLink}
                            </Typography>
-                           {role.since ? (
+                           {role.since && (
                               <Typography
                                  component="p"
                                  variant="body2"
@@ -146,7 +133,7 @@ export const CareerCard = ({
                               >
                                  {`Since ${role.since}`}
                               </Typography>
-                           ) : null}
+                           )}
                         </Box>
                      </Box>
                   );
