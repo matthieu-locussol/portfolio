@@ -55,7 +55,7 @@ const Work = () => {
                   {WORKS.map((work, index) => (
                      <CareerCard
                         key={index}
-                        title={work.title}
+                        roles={work.roles}
                         company={work.company}
                         tags={work.tags}
                         active={work.active}

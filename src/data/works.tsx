@@ -1,7 +1,10 @@
 import { ExternalLink } from '../components/ExternalLink';
 
 interface Work {
-   title: string;
+   roles: {
+      title: string;
+      since: string;
+   }[];
    company: {
       name: string;
       link: string;
@@ -13,7 +16,16 @@ interface Work {
 
 export const WORKS: Work[] = [
    {
-      title: 'Full-Stack Developer',
+      roles: [
+         {
+            title: 'Full-Stack Developer',
+            since: 'April 2020',
+         },
+         {
+            title: 'Senior Full-Stack Developer',
+            since: 'February 1st, 2025',
+         },
+      ],
       company: {
          name: 'Galadrim',
          link: 'https://galadrim.fr/',
@@ -41,7 +53,12 @@ export const WORKS: Work[] = [
       ],
    },
    {
-      title: 'Innovation Finance Consultant',
+      roles: [
+         {
+            title: 'Innovation Finance Consultant',
+            since: 'May 2019',
+         },
+      ],
       company: {
          name: 'III Financements',
          link: 'http://www.iii-financements.com/',
@@ -51,13 +68,25 @@ export const WORKS: Work[] = [
       entries: [
          [
             'Description',
-            '▹ Writing technical documents for start-ups and SMEs in the context of fundraising applications to Bpifrance',
+            <>
+               {
+                  '▹ Writing technical documents for start-ups and SMEs in the context of fundraising applications to '
+               }
+               <ExternalLink label="Bpifrance homepage" href="https://www.bpifrance.com/">
+                  Bpifrance
+               </ExternalLink>
+            </>,
          ],
          ['Technologies', '▹ Microsoft Word ▹ Microsoft Excel ▹ Microsoft PowerPoint'],
       ],
    },
    {
-      title: 'Software Engineer Intern',
+      roles: [
+         {
+            title: 'Software Engineer Intern',
+            since: 'March 2019',
+         },
+      ],
       company: {
          name: 'Viveris',
          link: 'https://www.viveris.fr/',
@@ -92,7 +121,12 @@ export const WORKS: Work[] = [
       ],
    },
    {
-      title: 'Research Intern',
+      roles: [
+         {
+            title: 'Research Intern',
+            since: 'June 2018',
+         },
+      ],
       company: {
          name: 'IRIT-ENSEEIHT',
          link: 'https://www.irit.fr/',
@@ -128,7 +162,12 @@ export const WORKS: Work[] = [
       ],
    },
    {
-      title: 'Software Engineer Intern',
+      roles: [
+         {
+            title: 'Software Engineer Intern',
+            since: 'April 2017',
+         },
+      ],
       company: {
          name: 'IRIT-UPS',
          link: 'https://www.irit.fr/',
@@ -140,10 +179,7 @@ export const WORKS: Work[] = [
             'Description',
             <>
                {`▹ Collaborated with a `}
-               <ExternalLink
-                  label="IRIT Team webpage"
-                  href="https://www.irit.fr/STORM/site/team/"
-               >
+               <ExternalLink label="IRIT Team webpage" href="https://www.irit.fr/STORM/site/team/">
                   team
                </ExternalLink>
                {` of research engineers to enhance `}
@@ -158,10 +194,7 @@ export const WORKS: Work[] = [
                {`▹ Architected a better OpenGL abstraction to the Radium-Engine and allowed easier code maintenance related to future improvements of the OpenGL specification`}
                <br />
                {`▹ Helped working on `}
-               <ExternalLink
-                  label="PBRT v3 repository"
-                  href="https://github.com/mmp/pbrt-v3"
-               >
+               <ExternalLink label="PBRT v3 repository" href="https://github.com/mmp/pbrt-v3">
                   PBRT
                </ExternalLink>
                {` integration within the engine`}
