@@ -62,6 +62,9 @@ export const darkTheme: Theme = createTheme({
    components: {
       MuiCssBaseline: {
          styleOverrides: {
+            html: {
+               scrollBehavior: 'smooth',
+            },
             body: {
                backgroundColor: DARK_BACKGROUND_DEFAULT,
                transition: 'background-color 0.25s ease',

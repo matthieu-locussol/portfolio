@@ -62,6 +62,9 @@ export const lightTheme: Theme = createTheme({
    components: {
       MuiCssBaseline: {
          styleOverrides: {
+            html: {
+               scrollBehavior: 'smooth',
+            },
             body: {
                backgroundColor: LIGHT_BACKGROUND_DEFAULT,
                transition: 'background-color 0.25s ease',

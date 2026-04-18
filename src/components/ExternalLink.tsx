@@ -13,9 +13,9 @@ export const ExternalLink = ({ label, ...rest }: ExternalLinkProps) => {
          aria-label={label}
          sx={{
             textDecoration: 'none',
+            transition: 'opacity 0.3s',
             '&:hover': {
                opacity: 0.8,
-               transition: 'opacity 0.3s',
             },
          }}
          {...rest}

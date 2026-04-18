@@ -5,6 +5,7 @@ import { Layout } from '../components/Layout';
 import { PortfolioCardDesktop } from '../components/PortfolioCardDesktop';
 import { PortfolioCardMobile } from '../components/PortfolioCardMobile';
 import { PortfolioCardOther } from '../components/PortfolioCardOther';
+import { RevealOnScroll } from '../components/RevealOnScroll';
 import { FEATURED_PROJECTS, OTHER_PROJECTS } from '../data/projects';
 import { chunk } from '../utils/chunk';
 
@@ -14,21 +15,30 @@ const Portfolio = () => {
    return (
       <Layout>
          <Container maxWidth="lg" sx={{ pt: 2, pb: 4 }}>
-            <Typography component="h1" variant="h3">
-               Portfolio
-            </Typography>
-            <Box>
-               <Typography component="p" variant="subtitle1" color="textSecondary" sx={{ mt: 2 }}>
-                  One of the coolest things about programming is that it allows you to bring your
-                  ideas to life 💡 <br />
-                  Here are some things I've built during my spare time, feel free to check them out!
-                  If you have any question regarding one project,{' '}
-                  <InternalLink label="Contact page" href="/contact">
-                     feel free to reach me out
-                  </InternalLink>
-                  .
+            <RevealOnScroll>
+               <Typography component="h1" variant="h3">
+                  Portfolio
                </Typography>
-            </Box>
+            </RevealOnScroll>
+            <RevealOnScroll delay={0.1}>
+               <Box>
+                  <Typography
+                     component="p"
+                     variant="subtitle1"
+                     color="textSecondary"
+                     sx={{ mt: 2 }}
+                  >
+                     One of the coolest things about programming is that it allows you to bring your
+                     ideas to life 💡 <br />
+                     Here are some things I've built during my spare time, feel free to check them
+                     out! If you have any question regarding one project,{' '}
+                     <InternalLink label="Contact page" href="/contact">
+                        feel free to reach me out
+                     </InternalLink>
+                     .
+                  </Typography>
+               </Box>
+            </RevealOnScroll>
          </Container>
          <Box
             sx={{
@@ -62,27 +72,29 @@ const Portfolio = () => {
                   }}
                >
                   {FEATURED_PROJECTS.map((project, idx) => (
-                     <React.Fragment key={project.title}>
-                        <PortfolioCardDesktop
-                           {...project}
-                           rtl={idx % 2 === 0}
-                           key={idx}
-                           sx={{ display: { xs: 'none', md: 'flex' } }}
-                        />
-                        <PortfolioCardMobile
-                           {...project}
-                           key={`${idx}-mobile`}
-                           sx={{ display: { xs: 'flex', md: 'none' } }}
-                        />
-                     </React.Fragment>
+                     <RevealOnScroll key={project.title} delay={0.1}>
+                        <React.Fragment>
+                           <PortfolioCardDesktop
+                              {...project}
+                              rtl={idx % 2 === 0}
+                              sx={{ display: { xs: 'none', md: 'flex' } }}
+                           />
+                           <PortfolioCardMobile
+                              {...project}
+                              sx={{ display: { xs: 'flex', md: 'none' } }}
+                           />
+                        </React.Fragment>
+                     </RevealOnScroll>
                   ))}
                </Box>
             </Container>
          </Box>
          <Container maxWidth="lg" sx={{ pt: 6, pb: 4 }}>
-            <Typography component="h3" gutterBottom variant="h4" sx={{ mb: 4 }}>
-               Other Projects
-            </Typography>
+            <RevealOnScroll>
+               <Typography component="h3" gutterBottom variant="h4" sx={{ mb: 4 }}>
+                  Other Projects
+               </Typography>
+            </RevealOnScroll>
             {chunk(OTHER_PROJECTS, 2).map((projects, idx) => (
                <Box
                   key={idx}

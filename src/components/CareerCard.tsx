@@ -61,6 +61,11 @@ export const CareerCard = ({
                : theme.palette.background.default,
             borderLeft: `4px solid ${borderColor}`,
             opacity: internship ? 0.85 : 1,
+            transition: 'border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease',
+            ':hover': {
+               transform: 'translateY(-2px)',
+               borderLeftColor: theme.palette.primary.main,
+            },
          }}
       >
          <Box sx={{ mt: hasSingleRole ? 1 : 0 }}>
