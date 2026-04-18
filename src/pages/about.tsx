@@ -70,7 +70,7 @@ const About = () => {
                      sx={{
                         transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
                         backgroundColor: theme.palette.primary.main,
-                        borderRadius: 1,
+                        borderRadius: 2,
                         display: 'block',
                         position: 'relative',
                         width: '100%',
@@ -79,7 +79,7 @@ const About = () => {
                         maxHeight: { xs: '280px', md: '290px' },
                         margin: { xs: 'auto', md: 0 },
                         '& img': {
-                           borderRadius: 1,
+                           borderRadius: 2,
                            filter: 'grayscale(100%) contrast(1)',
                            mixBlendMode: 'multiply',
                            transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',

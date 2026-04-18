@@ -104,8 +104,10 @@ export const lightTheme: Theme = createTheme({
                fontWeight: 600,
             },
             filled: {
-               backgroundColor: 'rgba(13, 140, 109, 0.10)',
-               color: LIGHT_PRIMARY_MAIN,
+               '&:not(.MuiChip-colorPrimary)': {
+                  backgroundColor: 'rgba(13, 140, 109, 0.10)',
+                  color: LIGHT_PRIMARY_MAIN,
+               },
             },
          },
       },
