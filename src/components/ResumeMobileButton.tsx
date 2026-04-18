@@ -1,5 +1,6 @@
 import { ListItem, ListItemText, Typography, useTheme } from '@mui/material';
 import Link from 'next/link';
+import { FONT_MONO } from '../theme/constants';
 
 interface ResumeMobileButtonProps {
    lang: 'EN' | 'FR';
@@ -15,7 +16,7 @@ export const ResumeMobileButton = ({ lang }: ResumeMobileButtonProps) => {
                primary={
                   <Typography
                      color={theme.palette.primary.main}
-                     sx={{ fontFamily: 'Fira Code' }}
+                     sx={{ fontFamily: FONT_MONO }}
                   >{`Resume (${lang})`}</Typography>
                }
             />

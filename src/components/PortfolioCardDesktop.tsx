@@ -3,6 +3,7 @@ import { Box, Card, Typography, useTheme } from '@mui/material';
 import NextImage from 'next/image';
 import { useColorMode } from '../contexts/ColorModeContext';
 import type { Project } from '../data/projects';
+import { FONT_MONO } from '../theme/constants';
 import { ExternalLink } from './ExternalLink';
 import { GitHubIcon } from './GitHubIcon';
 import { LinkIcon } from './LinkIcon';
@@ -74,7 +75,7 @@ export const PortfolioCardDesktop = ({
             component="h2"
             variant="subtitle1"
             color="primary"
-            sx={{ [property]: 'auto', fontFamily: 'Fira Code' }}
+            sx={{ [property]: 'auto', fontFamily: FONT_MONO }}
          >
             Featured project
          </Typography>

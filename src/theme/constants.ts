@@ -15,3 +15,8 @@ export const LIGHT_TEXT_SECONDARY = '#64607A';
 export const LIGHT_SHADOW_SM = 'rgba(46, 48, 71, 0.06) 0px 1px 3px, rgba(46, 48, 71, 0.04) 0px 1px 2px';
 export const LIGHT_SHADOW_MD = 'rgba(46, 48, 71, 0.08) 0px 4px 16px, rgba(46, 48, 71, 0.04) 0px 1px 4px';
 export const LIGHT_SHADOW_LG = 'rgba(46, 48, 71, 0.10) 0px 8px 30px -4px, rgba(46, 48, 71, 0.05) 0px 2px 8px';
+
+export const FONT_HEADING = '"Outfit", -apple-system, system-ui, sans-serif';
+export const FONT_BODY =
+   '"Inter", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif';
+export const FONT_MONO = '"JetBrains Mono", "Fira Code", "SF Mono", Menlo, Consolas, monospace';

@@ -1,6 +1,9 @@
 import type { Theme } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import {
+   FONT_BODY,
+   FONT_HEADING,
+   FONT_MONO,
    LIGHT_BACKGROUND_DEFAULT,
    LIGHT_BACKGROUND_PAPER,
    LIGHT_PRIMARY_MAIN,
@@ -42,8 +45,19 @@ export const lightTheme: Theme = createTheme({
       divider: 'rgba(46, 48, 71, 0.12)',
    },
    typography: {
-      fontFamily:
-         'Poppins, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif',
+      fontFamily: FONT_BODY,
+      h1: { fontFamily: FONT_HEADING, fontWeight: 700, fontSize: '3.25rem', letterSpacing: '-0.02em', lineHeight: 1.15 },
+      h2: { fontFamily: FONT_HEADING, fontWeight: 600, fontSize: '2.75rem', letterSpacing: '-0.015em', lineHeight: 1.2 },
+      h3: { fontFamily: FONT_HEADING, fontWeight: 600, fontSize: '2rem', letterSpacing: '-0.01em', lineHeight: 1.3 },
+      h4: { fontFamily: FONT_HEADING, fontWeight: 600, fontSize: '1.5rem', lineHeight: 1.35 },
+      h5: { fontFamily: FONT_HEADING, fontWeight: 600, fontSize: '1.25rem', lineHeight: 1.4 },
+      h6: { fontFamily: FONT_HEADING, fontWeight: 600, fontSize: '1.125rem', lineHeight: 1.4 },
+      subtitle1: { fontSize: '1.125rem', lineHeight: 1.7 },
+      subtitle2: { fontWeight: 500, fontSize: '0.875rem', lineHeight: 1.6 },
+      body1: { fontSize: '1rem', lineHeight: 1.7 },
+      body2: { fontSize: '0.875rem', lineHeight: 1.65 },
+      overline: { fontFamily: FONT_MONO, fontWeight: 400, fontSize: '0.875rem', letterSpacing: '0.04em', textTransform: 'none' as const },
+      button: { fontFamily: FONT_HEADING, fontWeight: 500, fontSize: '1rem' },
    },
    components: {
       MuiCssBaseline: {
@@ -58,7 +72,7 @@ export const lightTheme: Theme = createTheme({
          styleOverrides: {
             root: {
                fontSize: 18,
-               fontFamily: 'Jost',
+               fontFamily: FONT_HEADING,
                textTransform: 'none',
                borderRadius: 8,
                ':hover': {
@@ -66,7 +80,7 @@ export const lightTheme: Theme = createTheme({
                },
             },
             outlined: {
-               fontFamily: 'Fira Code',
+               fontFamily: FONT_MONO,
                fontWeight: 400,
                fontSize: 14,
                borderColor: LIGHT_PRIMARY_MAIN,

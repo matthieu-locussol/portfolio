@@ -9,13 +9,13 @@ const Home = () => {
             <Typography
                component="h1"
                gutterBottom
-               variant="subtitle1"
+               variant="overline"
                color="primary"
-               sx={{ fontFamily: 'Fira Code', fontSize: 18, mb: 2 }}
+               sx={{ mb: 2 }}
             >
                Hi, my name is
             </Typography>
-            <Typography gutterBottom variant="h2" sx={{ fontSize: 54 }}>
+            <Typography gutterBottom variant="h2" sx={{ fontSize: { xs: '2.5rem', md: '3.375rem' } }}>
                Matthieu Locussol.
             </Typography>
             <Typography
@@ -23,7 +23,7 @@ const Home = () => {
                gutterBottom
                variant="h2"
                color="textSecondary"
-               sx={{ fontSize: 54 }}
+               sx={{ fontSize: { xs: '2.5rem', md: '3.375rem' } }}
             >
                I am a fullstack developer.
             </Typography>
@@ -32,7 +32,7 @@ const Home = () => {
                gutterBottom
                variant="subtitle1"
                color="textSecondary"
-               sx={{ maxWidth: 500, lineHeight: '28px', mt: 4 }}
+               sx={{ maxWidth: 500, mt: 4 }}
             >
                I'm a fullstack developer working as a full-time full remote worker at{' '}
                <ExternalLink label="Iziwork website" href="https://www.iziwork.com/">

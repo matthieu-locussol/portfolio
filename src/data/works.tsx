@@ -34,7 +34,7 @@ export const WORKS: Work[] = [
             'Description',
             <>
                {
-                  '▹ Building high-quality platform to simplify temporary work in France, with a focus on the web application'
+                  '▹ Building a high-quality platform to simplify temporary work in France, with a focus on the web application'
                }
                <br />
                {'▹ Participate in architecture decisions and code reviews'}

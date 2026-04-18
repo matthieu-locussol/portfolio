@@ -1,6 +1,7 @@
 import { Button, Container, Typography } from '@mui/material';
 import Link from 'next/link';
 import { Layout } from '../components/Layout';
+import { FONT_MONO } from '../theme/constants';
 
 const Custom404 = () => {
    return (
@@ -22,7 +23,7 @@ const Custom404 = () => {
                gutterBottom
                variant="h1"
                color="primary"
-               sx={{ fontFamily: 'Fira Code', fontSize: { xs: 160, lg: 300 }, mb: 2 }}
+               sx={{ fontFamily: FONT_MONO, fontSize: { xs: 160, lg: 300 }, mb: 2 }}
             >
                404
             </Typography>
