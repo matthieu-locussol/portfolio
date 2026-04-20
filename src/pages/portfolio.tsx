@@ -47,7 +47,7 @@ const Portfolio = () => {
                ml: -4,
                mr: -4,
                mt: 2,
-               pt: { xs: 0, md: 8 },
+               pt: { xs: 4, md: 8 },
                pb: { xs: 8, md: 12 },
                backgroundColor: theme.palette.background.paper,
             }}

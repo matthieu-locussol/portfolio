@@ -25,13 +25,13 @@ const About = () => {
                   flexDirection: { xs: 'column', md: 'row' },
                }}
             >
-               <RevealOnScroll delay={0.1} width="fit-content">
+               <RevealOnScroll delay={0.1} width="responsive-fullwidth">
                   <Box>
                      <Typography
                         component="p"
                         variant="subtitle1"
                         color="textSecondary"
-                        sx={{ maxWidth: 500, mt: 2 }}
+                        sx={{ maxWidth: { md: 500 }, mt: 2 }}
                      >
                         Hello! I'm Matthieu, I hold a Master's degree in Computer Science from{' '}
                         <ExternalLink
@@ -51,23 +51,23 @@ const About = () => {
                         component="p"
                         variant="subtitle1"
                         color="textSecondary"
-                        sx={{ maxWidth: 500, mt: 2 }}
+                        sx={{ maxWidth: { md: 500 }, mt: 2 }}
                      >
-                        I really enjoy collaborating within international teams, and I actively look
-                        to keep that multicultural dynamic in my work.
+                        I really enjoy collaborating within international teams, and I look to keep
+                        that multicultural dynamic in my work.
                      </Typography>
                      <Typography
                         component="p"
                         variant="subtitle1"
                         color="textSecondary"
-                        sx={{ maxWidth: 500, mt: 2 }}
+                        sx={{ maxWidth: { md: 500 }, mt: 2 }}
                      >
                         This reflects my personal life too: my family ties to Japan mean I naturally
                         navigate in a cross-cultural environment.
                      </Typography>
                   </Box>
                </RevealOnScroll>
-               <RevealOnScroll delay={0.2} width="fit-content">
+               <RevealOnScroll delay={0.2} width="responsive-fullwidth">
                   <Box sx={{ position: 'relative', mt: { xs: 4, md: 0 } }}>
                      <Link
                         href="https://github.com/matthieu-locussol"
@@ -82,7 +82,7 @@ const About = () => {
                            width: '100%',
                            maxWidth: '280px',
                            height: '97.5%',
-                           maxHeight: { xs: '280px', md: '290px' },
+                           maxHeight: '280px',
                            margin: { xs: 'auto', md: 0 },
                            '& img': {
                               borderRadius: 2,
