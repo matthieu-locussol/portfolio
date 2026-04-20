@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/matthieu-locussol/portfolio/compare/v1.13.2...v1.14.0) (2026-04-20)
+
+
+### Features
+
+* add internship support to CareerCard and works data, updating Work page to reflect changes ([3b9d748](https://github.com/matthieu-locussol/portfolio/commit/3b9d748b235a1e73d21ebdbf36c528f28512cc64))
+* add sharp dependency for image processing and update package.json; enhance ExternalLink and InternalLink components with underline styling for better visibility ([6d82715](https://github.com/matthieu-locussol/portfolio/commit/6d82715970d11705e932e0402efa767d1c5fe08a))
+* enhance CareerCard component to support multiple roles with timestamps ([03b05ea](https://github.com/matthieu-locussol/portfolio/commit/03b05ea0b58c35dfdcbb590cd45004c1019ca2c8))
+* integrate framer-motion for animations and add RevealOnScroll component to enhance page transitions; update various pages for improved visual effects ([7181d2e](https://github.com/matthieu-locussol/portfolio/commit/7181d2e40e1f09bec23ce2b9688f9963c12f5692))
+* replace ResumeButton with ResumeSelect component ([114f60c](https://github.com/matthieu-locussol/portfolio/commit/114f60ca6239082c67b2efa7acb2bbd81cd6a8f9))
+* updated profile picture ([4de9e0f](https://github.com/matthieu-locussol/portfolio/commit/4de9e0f69f5c6fc335b0869243751c6b2ea4577b))
+
+
+### Bug Fixes
+
+* removed useless projects ([f5029fb](https://github.com/matthieu-locussol/portfolio/commit/f5029fbd7b8ce756cad022106172d5405c4369c2))
+* updated location ([a8b8462](https://github.com/matthieu-locussol/portfolio/commit/a8b8462e7a2e58df7a1d21ecf7cf17767aeb2d38))
+
 ### [1.13.2](https://github.com/matthieu-locussol/portfolio/compare/v1.13.1...v1.13.2) (2025-04-12)
 
 ### [1.13.1](https://github.com/matthieu-locussol/portfolio/compare/v1.13.0...v1.13.1) (2025-04-11)
