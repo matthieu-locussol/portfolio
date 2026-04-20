@@ -12,7 +12,7 @@ const CustomApp = (props: AppProps) => {
       <ColorModeProvider>
          <Head>
             <title itemProp="name" lang="en">
-               Matthieu Locussol | Software Engineer
+               Matthieu Locussol | Fullstack Developer
             </title>
             <meta charSet="utf-8" />
             <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -30,40 +30,40 @@ const CustomApp = (props: AppProps) => {
             />
             <meta
                name="keywords"
-               content="Matthieu Locussol, Matthieu, Locussol, software engineer, software architecture, galadrim, c, c++, python, javascript, typescript, react, python, vercel, github, gitlab, aws, gcp, innovation consulting, innovation, consulting, freelance"
+               content="Matthieu Locussol, Matthieu, Locussol, fullstack developer, software architecture, galadrim, c, c++, python, javascript, typescript, react, python, vercel, github, gitlab, aws, gcp, innovation consulting, innovation, consulting, freelance"
             />
             <meta
                name="google-site-verification"
                content="NYPo--D5bfJS12SG4DK7MgqSyXB_nDElWEpWahY1I3E"
             />
-            <meta property="og:title" content="Matthieu Locussol | Software Engineer" />
+            <meta property="og:title" content="Matthieu Locussol | Fullstack Developer" />
             <meta
                property="og:description"
                content="Matthieu Locussol is a web developer and software engineer who enjoys architecting & building wonderful applications."
             />
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://www.matthieu-locussol.com" />
-            <meta property="og:site_name" content="Matthieu Locussol | Software Engineer" />
+            <meta property="og:site_name" content="Matthieu Locussol | Fullstack Developer" />
             <meta property="og:image" content={`https://www.matthieu-locussol.com/og.webp`} />
             <meta property="og:image:width" content="1439" />
             <meta property="og:image:height" content="763" />
             <meta property="og:image:type" content="image/png" />
             <meta property="og:locale" content="en_US" />
-            <meta itemProp="name" content="Matthieu Locussol | Software Engineer" />
+            <meta itemProp="name" content="Matthieu Locussol | Fullstack Developer" />
             <meta
                itemProp="description"
-               content="Matthieu Locussol is a software engineer currently working in freelance who enjoys architecting & building applications."
+               content="Matthieu Locussol is a fullstack developer currently working in full remote who enjoys architecting & building applications."
             />
             <meta itemProp="image" content={`https://www.matthieu-locussol.com/og.webp`} />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:url" content="https://www.matthieu-locussol.com" />
-            <meta name="twitter:title" content="Matthieu Locussol | Software Engineer" />
+            <meta name="twitter:title" content="Matthieu Locussol | Fullstack Developer" />
             <meta
                name="twitter:description"
-               content="Matthieu Locussol is a software engineer currently working in freelance who enjoys architecting & building applications."
+               content="Matthieu Locussol is a fullstack developer currently working in full remote who enjoys architecting & building applications."
             />
             <meta name="twitter:image" content={`https://www.matthieu-locussol.com/og.webp`} />
-            <meta name="twitter:image:alt" content="Matthieu Locussol | Software Engineer" />
+            <meta name="twitter:image:alt" content="Matthieu Locussol | Fullstack Developer" />
 
             <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
             <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png" />
