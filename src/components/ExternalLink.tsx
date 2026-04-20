@@ -12,7 +12,7 @@ export const ExternalLink = ({ label, ...rest }: ExternalLinkProps) => {
          rel="noreferrer"
          aria-label={label}
          sx={{
-            textDecoration: 'none',
+            textDecoration: 'underline',
             transition: 'opacity 0.3s',
             '&:hover': {
                opacity: 0.8,

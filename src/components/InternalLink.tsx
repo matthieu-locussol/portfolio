@@ -8,11 +8,11 @@ interface InternalLinkProps extends LinkProps {
 
 export const InternalLink = ({ children, href, label, ...rest }: InternalLinkProps) => {
    return (
-      <NextLink href={href}>
+      <NextLink href={href} passHref>
          <Link
             aria-label={label}
             sx={{
-               textDecoration: 'none',
+               textDecoration: 'underline',
                '&:hover': {
                   cursor: 'pointer',
                   opacity: 0.8,

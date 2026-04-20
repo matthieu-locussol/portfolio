@@ -7,7 +7,9 @@ export const Layout = ({ children }: BoxProps) => {
    return (
       <Box>
          <Header />
-         <Box sx={{ p: 4 }}>{children}</Box>
+         <Box component="main" sx={{ p: 4 }}>
+            {children}
+         </Box>
          <SocialMenu />
       </Box>
    );

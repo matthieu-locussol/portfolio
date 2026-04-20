@@ -11,7 +11,7 @@ export const ResumeMobileButton = ({ lang }: ResumeMobileButtonProps) => {
 
    return (
       <Link href={`/resume/Matthieu_LOCUSSOL_Resume_${lang}.pdf`} passHref>
-         <ListItem button sx={{ p: 2 }}>
+         <ListItem component="a" button sx={{ p: 2 }}>
             <ListItemText
                primary={
                   <Typography

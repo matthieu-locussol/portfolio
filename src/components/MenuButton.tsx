@@ -95,6 +95,7 @@ export const MenuButton = ({ items }: MenuButtonProps) => {
                   <React.Fragment key={item.name}>
                      <Link href={item.href} passHref key={item.name}>
                         <ListItem
+                           component="a"
                            disabled={item.href === router.pathname}
                            button
                            sx={{ p: 2, opacity: '1 !important' }}

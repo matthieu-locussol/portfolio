@@ -37,9 +37,13 @@ export const CareerCard = ({
    const hasSingleRole = timelineRoles.length <= 1;
 
    const companyLink = company ? (
-      <ExternalLink label={`Visit ${company.name} website`} href={company.link}>
-         {` @ ${company.name}`}
-      </ExternalLink>
+      <>
+         {' '}
+         @{' '}
+         <ExternalLink label={`Visit ${company.name} website`} href={company.link}>
+            {`${company.name}`}
+         </ExternalLink>
+      </>
    ) : null;
 
    const borderColor = active
