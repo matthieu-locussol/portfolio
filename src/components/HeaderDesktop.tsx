@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { ColorModeButton } from './ColorModeButton';
 import type { MenuItem } from './Header';
 import { Logo } from './Logo';
-import { ResumeButton } from './ResumeButton';
+import { ResumeSelect } from './ResumeSelect';
 
 interface HeaderDesktopProps extends ToolbarProps {
    items: MenuItem[];
@@ -35,8 +35,7 @@ export const HeaderDesktop = ({ items, ...rest }: HeaderDesktopProps) => {
          </Box>
          <Box>
             <ColorModeButton />
-            <ResumeButton lang="EN" />
-            <ResumeButton lang="FR" />
+            <ResumeSelect />
          </Box>
       </Toolbar>
    );
