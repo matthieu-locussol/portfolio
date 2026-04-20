@@ -19,7 +19,11 @@ const Home = () => {
                </Typography>
             </RevealOnScroll>
             <RevealOnScroll delay={0.1}>
-               <Typography gutterBottom variant="h2" sx={{ fontSize: { xs: '2.5rem', md: '3.375rem' } }}>
+               <Typography
+                  gutterBottom
+                  variant="h2"
+                  sx={{ fontSize: { xs: '2.5rem', md: '3.375rem' } }}
+               >
                   Matthieu Locussol.
                </Typography>
             </RevealOnScroll>
@@ -42,7 +46,7 @@ const Home = () => {
                   color="textSecondary"
                   sx={{ maxWidth: 500, mt: 4 }}
                >
-                  I'm a fullstack developer working as a full-time full remote worker at{' '}
+                  I'm a senior fullstack developer working as a full remote worker at{' '}
                   <ExternalLink label="Iziwork website" href="https://www.iziwork.com/">
                      Iziwork
                   </ExternalLink>
